@@ -1,0 +1,22 @@
+# Tasks
+
+- [ ] Project Initialization
+    - [x] Explore current directory
+    - [x] Update Implementation Plan (Tailwind CSS)
+    - [x] Clean Directory
+    - [x] Initialize Next.js Project (TypeScript, Tailwind)
+- [ ] Core Architecture
+    - [x] Setup Routing (App Router)
+    - [x] Setup Markdown Loading/Parsing
+    - [x] Create Layout (Navbar, Footer)
+- [ ] Features
+    - [x] Home Page
+    - [x] Campaign List/Navigation
+    - [x] Story View (Markdown rendering)
+    - [x] Collapsible Rules/HRP sections
+    - [x] Character Pages (Dynamic Sheets)
+- [x] Styling & Polish
+    - [x] Apply Premium Design (Tailwind CSS)
+    - [x] Responsive Design
+- [ ] Deployment Prep
+    - [x] Configure for GitHub Pages
