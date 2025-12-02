@@ -50,6 +50,18 @@ Ran `npm run build` successfully. The static export generated the following rout
 - Verified markdown rendering with custom directives.
 - Verified responsive design on different screen sizes (via Tailwind classes).
 
+## Deployment Instructions
+
+The project is configured to deploy to GitHub Pages using GitHub Actions.
+
+1.  **Push to GitHub**: Push your code to your GitHub repository.
+2.  **Enable GitHub Pages**:
+    - Go to your repository **Settings**.
+    - Navigate to **Pages** (under "Code and automation").
+    - Under **Build and deployment** > **Source**, select **GitHub Actions**.
+    - The custom workflow "Deploy Next.js site to Pages" will automatically be suggested or selected.
+3.  **Verify Deployment**:
+    - Once the workflow runs (check the **Actions** tab), your site will be live at `https://<username>.github.io/<repo-name>/`.
+
 ## Next Steps
-- **Deployment**: Push the code to GitHub and enable GitHub Pages (Source: GitHub Actions or /out folder).
 - **Content Creation**: Add more markdown files to `content/campaigns` and `content/characters`.
