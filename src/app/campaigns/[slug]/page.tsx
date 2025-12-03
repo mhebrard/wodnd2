@@ -21,7 +21,7 @@ export default async function CampaignPage({ params }: { params: Promise<{ slug:
     return (
         <div className="max-w-4xl mx-auto">
             <div className="mb-8 border-b border-slate-800 pb-4">
-                <h1 className="text-4xl font-bold text-indigo-400 mb-2">{post.title}</h1>
+                <h1 className="text-4xl font-bold text-red-500 mb-2 font-[family-name:var(--font-cinzel)]">{post.title}</h1>
                 <p className="text-slate-500 font-mono">{post.date}</p>
             </div>
 

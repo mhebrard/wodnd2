@@ -39,19 +39,19 @@ const remarkDirectivePlugin: Plugin = () => {
 
 const MarkdownRenderer = ({ content }: MarkdownRendererProps) => {
     return (
-        <article className="prose prose-invert prose-indigo max-w-none">
+        <article className="prose prose-invert prose-red max-w-none">
             <ReactMarkdown
                 remarkPlugins={[remarkGfm, remarkDirective, remarkDirectivePlugin]}
                 components={{
                     details: ({ node, children, className, ...props }) => {
                         if (className?.includes('rules-section')) {
                             return (
-                                <details className="my-4 bg-slate-900/50 border border-indigo-500/30 rounded-lg overflow-hidden group" {...props}>
-                                    <summary className="flex items-center gap-2 px-4 py-3 bg-indigo-500/10 cursor-pointer hover:bg-indigo-500/20 transition-colors font-bold text-indigo-300 select-none">
+                                <details className="my-4 bg-slate-900/50 border border-red-500/30 rounded-lg overflow-hidden group" {...props}>
+                                    <summary className="flex items-center gap-2 px-4 py-3 bg-red-500/10 cursor-pointer hover:bg-red-500/20 transition-colors font-bold text-red-300 select-none font-[family-name:var(--font-cinzel)]">
                                         <Scroll className="h-4 w-4" />
                                         <span>Rules</span>
                                     </summary>
-                                    <div className="p-4 text-slate-300">
+                                    <div className="p-4 text-slate-300 font-sans">
                                         {children}
                                     </div>
                                 </details>
@@ -60,11 +60,11 @@ const MarkdownRenderer = ({ content }: MarkdownRendererProps) => {
                         if (className?.includes('hrp-section')) {
                             return (
                                 <details className="my-4 bg-slate-900/50 border border-amber-500/30 rounded-lg overflow-hidden group" {...props}>
-                                    <summary className="flex items-center gap-2 px-4 py-3 bg-amber-500/10 cursor-pointer hover:bg-amber-500/20 transition-colors font-bold text-amber-300 select-none">
+                                    <summary className="flex items-center gap-2 px-4 py-3 bg-amber-500/10 cursor-pointer hover:bg-amber-500/20 transition-colors font-bold text-amber-300 select-none font-[family-name:var(--font-cinzel)]">
                                         <AlertTriangle className="h-4 w-4" />
                                         <span>HRP (Hors Roleplay)</span>
                                     </summary>
-                                    <div className="p-4 text-slate-300">
+                                    <div className="p-4 text-slate-300 font-sans">
                                         {children}
                                     </div>
                                 </details>
