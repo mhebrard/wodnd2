@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,16 +27,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50 dark:bg-black`}>
         <nav className="w-full bg-white dark:bg-zinc-900 shadow flex items-center px-6 py-3 gap-8">
-          <a href="/" className="text-xl font-bold text-indigo-700 dark:text-indigo-300 tracking-tight hover:underline">TTRPG Story Hub</a>
+          <Link href="/" className="text-xl font-bold text-indigo-700 dark:text-indigo-300 tracking-tight hover:underline">TTRPG Story Hub</Link>
           <ul className="flex gap-4 text-base font-medium">
             <li>
-              <a href="/" className="text-zinc-700 dark:text-zinc-200 hover:text-indigo-600 dark:hover:text-indigo-400">Home</a>
+              <Link href="/" className="text-zinc-700 dark:text-zinc-200 hover:text-indigo-600 dark:hover:text-indigo-400">Home</Link>
             </li>
             <li>
-              <a href="#" className="text-zinc-700 dark:text-zinc-200 hover:text-indigo-600 dark:hover:text-indigo-400">The Shadow of Eldoria</a>
+              <Link href="/campaigns" className="text-zinc-700 dark:text-zinc-200 hover:text-indigo-600 dark:hover:text-indigo-400">Campaigns</Link>
             </li>
             <li>
-              <a href="#" className="text-zinc-700 dark:text-zinc-200 hover:text-indigo-600 dark:hover:text-indigo-400">Neon Nights: Cyber City</a>
+              <Link href="/characters" className="text-zinc-700 dark:text-zinc-200 hover:text-indigo-600 dark:hover:text-indigo-400">Characters</Link>
             </li>
           </ul>
         </nav>
