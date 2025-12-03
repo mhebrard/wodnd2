@@ -1,67 +1,60 @@
-# Implementation Plan - RPG Story Web App
+# Implementation Plan - WoDnD2 (World of Darkness & Dungeons & Dragons)
 
 ## Goal Description
-Create a web app that can be deployed on github.io. The website will display stories created from a table top role playing game. The website should have a home page with overview, a nav bar that allow to navigate between the different campagnes. The main content will be storyline, written in markdown for ease of content editing. From the story, there will be link to character page including dynamic character sheets and character story. From the main story there will be collapsible section to specify rules and HRP.
+Create a web app for "WoDnD2", an adaptation of World of Darkness (God-Machine v2) and AD&D. The site displays RPG stories, campaigns, and character sheets. It features a "Gothic Fantasy" theme with a dark aesthetic, Crimson Red/Amber accents, and Cinzel typography. The content is written in Markdown with support for custom directives (Rules/HRP). The app is built with Next.js and deployed to GitHub Pages.
 
-## User Review Required
-> [!IMPORTANT]
-> **Framework Choice**: I am proceeding with **Next.js**. I will re-initialize the project to ensure a clean state.
-> **Styling**: I will use **Tailwind CSS** as requested.
-> **Deployment**: The app will be configured for `github.io` (static export).
+## Architecture & Tech Stack
+- **Framework**: Next.js 14+ (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4 (with semantic CSS variables in `globals.css`)
+- **Content**: Markdown (`react-markdown`, `remark-gfm`, `remark-directive`)
+- **Icons**: Lucide React
+- **Deployment**: GitHub Pages (Static Export)
 
-## Proposed Changes
+## Implemented Features
 
-### Project Initialization
-#### [NEW] [package.json](file:///Users/mhebrard/Documents/GitHub/wodnd2/package.json)
-- Initialize new Next.js project with TypeScript and Tailwind CSS.
-- Dependencies: `react`, `react-dom`, `next`, `react-markdown`, `remark-gfm`, `lucide-react`, `tailwindcss`, `postcss`, `autoprefixer`.
+### 1. Core Structure & Theme
+- **Rebranding**: Project named "WoDnD2".
+- **Theme**: "Gothic Fantasy"
+    - **Background**: Dark (`slate-950`)
+    - **Primary Accent**: Crimson Red (`#b91c1c`)
+    - **Secondary Accent**: Amber (`#d97706`)
+    - **Typography**: `Cinzel` (Headings) + `Inter` (Body)
+- **Centralized Palette**: Colors defined as CSS variables in `src/app/globals.css` for easy theming.
 
-#### [NEW] [next.config.js](file:///Users/mhebrard/Documents/GitHub/wodnd2/next.config.js)
-- Configure `output: 'export'` for GitHub Pages compatibility.
-- Configure `images: { unoptimized: true }` for static export.
+### 2. Pages & Components
+- **Home Page** (`src/app/page.tsx`):
+    - Hero section with split title and justified overview.
+    - Links to Campaigns and Characters.
+- **Navbar** (`src/components/Navbar.tsx`):
+    - Responsive navigation with theme-aware styling.
+- **Campaigns** (`src/app/campaigns/`):
+    - Listing page fetching data from `content/campaigns`.
+    - Dynamic story pages rendering Markdown.
+- **Characters** (`src/app/characters/`):
+    - Listing page fetching data from `content/characters`.
+    - Dynamic character sheets with stats and backstory.
+- **Markdown Renderer** (`src/components/MarkdownRenderer.tsx`):
+    - Renders GitHub Flavored Markdown.
+    - Custom directives (`:::rules`, `:::hrp`) rendered as collapsible `<details>` sections.
 
-### Core Structure
-#### [NEW] src/app/layout.tsx
-- Root layout with Navigation Bar.
-- Global styles import (Tailwind directives).
+### 3. Data Management
+- **Content Source**: Markdown files in `content/campaigns` and `content/characters`.
+- **Utility** (`src/lib/markdown.ts`): Parses frontmatter and content.
 
-#### [NEW] src/app/page.tsx
-- Home page with overview.
+### 4. Deployment
+- **Config**: `output: 'export'` in `next.config.ts`.
+- **Workflow**: GitHub Actions (`.github/workflows/deploy.yml`) for automated build and deploy.
 
-#### [NEW] src/components/Navbar.tsx
-- Navigation links for Campaigns, Characters, Rules.
+## Verification
+- [x] **Build**: `npm run build` passes successfully.
+- [x] **Lint**: `npm run lint` passes.
+- [x] **Theme**: Verified dark mode, typography, and color accents across all pages.
+- [x] **Responsiveness**: Verified layout on desktop and mobile.
+- [x] **Interactivity**: Verified collapsible sections and navigation links.
 
-### Content & Features
-#### [NEW] src/lib/markdown.ts
-- Utility to parse markdown content.
+## Future Improvements
+- Add more content (stories/characters).
+- Implement search functionality.
+- Add "Rules" section as a dedicated page.
 
-#### [NEW] src/app/campaigns/[slug]/page.tsx
-- Dynamic route for displaying campaign stories.
-- Will render Markdown content.
-
-#### [NEW] src/components/MarkdownRenderer.tsx
-- Component to render markdown with custom directives for Collapsible sections (Rules/HRP).
-- Styled with Tailwind typography plugin (`@tailwindcss/typography`).
-
-#### [NEW] src/app/characters/page.tsx
-- List of characters.
-
-#### [NEW] src/app/characters/[id]/page.tsx
-- Dynamic character sheet view.
-
-## Verification Plan
-
-### Automated Tests
-- Run `npm run build` to verify static export succeeds.
-- Run `npm run lint` to check for code quality issues.
-
-### Manual Verification
-- **Home Page**: Verify overview text is visible and styled with Tailwind.
-- **Navigation**: Click links to ensure they route correctly.
-- **Story View**:
-    - Open a campaign page.
-    - Verify markdown renders correctly.
-    - Test collapsible sections (Rules/HRP) work interactively.
-- **Character Sheet**:
-    - Navigate to a character.
-    - Verify dynamic data is displayed.
