@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${cinzel.variable} font-sans bg-slate-950 text-slate-200 min-h-screen`}>
+      <body className={`${inter.variable} ${cinzel.variable} font-sans bg-background text-text-main min-h-screen`}>
         <Navbar />
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {children}
