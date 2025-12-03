@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/wodnd2/_next/static/chunks/796e69ae18b2784c.js"],""]
+3:I[97367,["/wodnd2/_next/static/chunks/ff1a16fafef87110.js","/wodnd2/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"IaoVSN8BM8-3SL815kj76","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"max-w-3xl mx-auto py-12 px-4","children":[["$","h1",null,{"className":"text-3xl font-bold mb-6 text-green-700 dark:text-green-300","children":"Characters"}],["$","ul",null,{"className":"space-y-4","children":["$","li",null,{"className":"p-4 bg-white dark:bg-zinc-900 rounded shadow flex flex-col sm:flex-row sm:items-center sm:gap-6","children":["$","$L2",null,{"href":"/characters/lira","className":"flex-1","children":[["$","h2",null,{"className":"text-lg font-bold","children":"Lira the Rogue"}],["$","p",null,{"className":"text-zinc-600 dark:text-zinc-300 mb-2","children":"Human Rogue (Level 2)"}],["$","p",null,{"className":"text-zinc-500 dark:text-zinc-400 text-sm","children":"Player: Alice | Background: Street Urchin"}]]}]}]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
