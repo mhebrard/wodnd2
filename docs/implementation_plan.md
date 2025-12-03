@@ -25,9 +25,10 @@ Create a web app for "WoDnD2", an adaptation of World of Darkness (God-Machine v
 ### 2. Pages & Components
 - **Home Page** (`src/app/page.tsx`):
     - Hero section with split title and justified overview.
-    - Links to Campaigns and Characters.
+    - **Clickable Cards**: "Latest Stories" and "Character Spotlight" cards are fully clickable links.
 - **Navbar** (`src/components/Navbar.tsx`):
     - Responsive navigation with theme-aware styling.
+    - **Improved Visibility**: Links are **bold** and hover color is **Amber** (`secondary`).
 - **Campaigns** (`src/app/campaigns/`):
     - Listing page fetching data from `content/campaigns`.
     - Dynamic story pages rendering Markdown.
