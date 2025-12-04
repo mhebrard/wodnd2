@@ -35,12 +35,15 @@ Create a web app for "WoDnD2", an adaptation of World of Darkness (God-Machine v
 - **Characters** (`src/app/characters/`):
     - Listing page fetching data from `content/characters`.
     - Dynamic character sheets with stats and backstory.
+- **Rules** (`src/app/rules/`):
+    - Listing page fetching data from `content/rules`.
+    - Dynamic rule pages rendering Markdown.
 - **Markdown Renderer** (`src/components/MarkdownRenderer.tsx`):
     - Renders GitHub Flavored Markdown.
     - Custom directives (`:::rules`, `:::hrp`) rendered as collapsible `<details>` sections.
 
 ### 3. Data Management
-- **Content Source**: Markdown files in `content/campaigns` and `content/characters`.
+- **Content Source**: Markdown files in `content/campaigns`, `content/characters`, and `content/rules`.
 - **Utility** (`src/lib/markdown.ts`): Parses frontmatter and content.
 
 ### 4. Deployment
@@ -53,9 +56,9 @@ Create a web app for "WoDnD2", an adaptation of World of Darkness (God-Machine v
 - [x] **Theme**: Verified dark mode, typography, and color accents across all pages.
 - [x] **Responsiveness**: Verified layout on desktop and mobile.
 - [x] **Interactivity**: Verified collapsible sections and navigation links.
+- [x] **Rules Feature**: Verified rules listing and detail pages.
 
 ## Future Improvements
 - Add more content (stories/characters).
 - Implement search functionality.
-- Add "Rules" section as a dedicated page.
 
