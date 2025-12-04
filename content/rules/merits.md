@@ -1,6 +1,7 @@
 ---
 title: "5. Merits"
 date: "2025-12-02"
+order: 5
 description: "Merits are specialities that enhance a character's traits."
 ---
 

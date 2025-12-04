@@ -1,6 +1,7 @@
 ---
 title: "6. Magic"
 date: "2025-12-01"
+order: 6
 description: "The arcane arts and how to wield them."
 ---
 

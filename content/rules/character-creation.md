@@ -1,6 +1,7 @@
 ---
 title: "3. Character Creation"
 date: "2025-12-04"
+order: 3
 description: "How to create a character"
 ---
 

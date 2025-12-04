@@ -18,6 +18,10 @@ const Navbar = () => {
                                 <Home className="h-4 w-4" />
                                 <span>Home</span>
                             </Link>
+                            <Link href="/rules" className="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-bold hover:bg-surface-hover hover:text-primary transition-colors font-[family-name:var(--font-cinzel)]">
+                                <Book className="h-4 w-4" />
+                                <span>Rules</span>
+                            </Link>
                             <Link href="/campaigns" className="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-bold hover:bg-surface-hover hover:text-primary transition-colors font-[family-name:var(--font-cinzel)]">
                                 <BookOpen className="h-4 w-4" />
                                 <span>Campaigns</span>
@@ -25,10 +29,6 @@ const Navbar = () => {
                             <Link href="/characters" className="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-bold hover:bg-surface-hover hover:text-primary transition-colors font-[family-name:var(--font-cinzel)]">
                                 <Users className="h-4 w-4" />
                                 <span>Characters</span>
-                            </Link>
-                            <Link href="/rules" className="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-bold hover:bg-surface-hover hover:text-primary transition-colors font-[family-name:var(--font-cinzel)]">
-                                <Book className="h-4 w-4" />
-                                <span>Rules</span>
                             </Link>
                         </div>
                     </div>

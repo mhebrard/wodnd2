@@ -1,6 +1,7 @@
 ---
 title: "2. Character Sheet"
 date: "2025-12-05"
+order: 2
 description: "Description of each trait of a character"
 ---
 

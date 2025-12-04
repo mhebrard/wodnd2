@@ -1,6 +1,7 @@
 ---
 title: "1. Core Rules"
 date: "2025-12-06"
+order: 1
 description: "The fundamental mechanics of WoDnD2, covering dice pools, attributes, and skills."
 ---
 
