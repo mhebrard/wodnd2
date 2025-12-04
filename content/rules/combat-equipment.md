@@ -1,6 +1,7 @@
 ---
 title: "4. Combat & Equipment"
 date: "2025-12-03"
+order: 4
 description: "Rules for fighting, weapons, and armor."
 ---
 

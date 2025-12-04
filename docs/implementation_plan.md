@@ -1,46 +1,88 @@
-# Implementation Plan - WoDnD2 (World of Darkness & Dungeons & Dragons)
+# Implementation Plan - WoDnD2
 
-## Goal Description
+## Goal
+Create a modern, immersive web interface for the "World of Dungeons & Dragons 2" (WoDnD2) campaign setting. The application will serve as a hub for campaign stories, character profiles, and game rules, featuring a premium "Gothic Fantasy" aesthetic with dynamic theming for different campaigns.
 
-Create a web app for "WoDnD2", an adaptation of World of Darkness (God-Machine v2) and AD&D. The site displays RPG stories, campaigns, and character sheets. It features a "Gothic Fantasy" theme with a dark aesthetic, Crimson Red/Amber accents, and Cinzel typography. The content is written in Markdown with support for custom directives (Rules/HRP). The app is built with Next.js and deployed to GitHub Pages.
+## Core Features
 
-## Architecture & Tech Stack
+### 1. Design System & Theming
+-   **Global Theme**: Dark mode default, "Gothic Fantasy" aesthetic.
+-   **Typography**: `Cinzel` for headings, `Inter` for body text.
+-   **Dynamic Theming**: Support for per-campaign color schemes that override the global theme.
+    -   **Global Default**: Amber (Primary) / Red (Secondary).
+    -   **Campaign Specific**: Each campaign defines its own Primary and Secondary colors in metadata.
 
-- **Framework**: Next.js 14+ (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS v4 (with semantic CSS variables in `globals.css`)
-- **Content**: Markdown (`react-markdown`, `remark-gfm`, `remark-directive`)
-- **Icons**: Lucide React
-- **Deployment**: GitHub Pages (Static Export)
+### 2. Navigation
+-   **Navbar**: Responsive navigation with links to Home, Rules, Campaigns, and Characters.
+-   **Breadcrumbs**: Contextual navigation within Campaign and Rule sections.
 
-## Implemented Features
+### 3. Content Management (Markdown)
+-   **Structure**:
+    -   `content/campaigns/[slug]/campaign.md`: Campaign metadata (title, description, colors).
+    -   `content/campaigns/[slug]/[scenario].md`: Scenario content.
+    -   `content/characters/*.md`: Character profiles.
+    -   `content/rules/*.md`: Rulebook sections.
+-   **Renderer**: Custom Markdown renderer with support for:
+    -   GitHub Flavored Markdown (tables, checklists).
+    -   Directives for custom components (e.g., `::character-stat-block`).
+    -   Typography plugin for beautiful prose.
 
-### 1. Core Structure & Theme
+### 4. Campaigns Feature
+-   **Campaign List**: Grid view of available campaigns, styled with their specific theme colors.
+-   **Campaign Detail**: Overview of a campaign, listing its scenarios.
+-   **Scenario View**: Immersive reading view for campaign chapters/scenarios, applying the campaign's unique color theme.
 
-- **Rebranding**: Project named "WoDnD2".
-- **Theme**: "Gothic Fantasy"
-  - **Background**: Dark (`slate-950`)
-  - **Primary Accent**: Amber (`#d97706`) - Used for main interactive elements, links, and headings.
-  - **Secondary Accent**: Red (`#ef4444`) - Used for specific highlights and HRP sections.
-  - **Typography**: `Cinzel` (Headings) + `Inter` (Body)
-- **Centralized Palette**: Colors defined as CSS variables in `src/app/globals.css` for easy theming.
+### 5. Characters Feature
+-   **Character List**: Gallery of character cards with portraits and key details.
+-   **Character Detail**: Comprehensive view including stats, backstory, and equipment.
 
-### 2. Pages & Components
+### 7. Navigation Enhancements
+-   **Breadcrumbs**: Reusable component for hierarchical navigation.
+    -   Used in Campaign Detail, Scenario View, and Rule Detail pages.
+-   **Pagination**: "Previous" and "Next" links for sequential content.
+    -   Used in Scenario View (next/prev scenario) and Rule Detail (next/prev rule).
+    -   Logic respects explicit `order` field in frontmatter.
+-   **Explicit Ordering**: Content sorting based on `order` field (ascending) falling back to `date` (descending).
 
-- **Home Page** (`src/app/page.tsx`):
-  - Hero section with split title and justified overview.
-  - **Clickable Cards**: "Latest Stories" and "Character Spotlight" cards are fully clickable links.
-- **Navbar** (`src/components/Navbar.tsx`):
-  - Responsive navigation with theme-aware styling.
-  - **Improved Visibility**: Links are **bold** and hover color is **Primary** (Amber).
-- **Campaigns** (`src/app/campaigns/`):
-  - Listing page fetching data from `content/campaigns`.
-  - **UI Polish**: Campaign cards feature a large "Open Book" watermark icon.
-  - Dynamic story pages rendering Markdown.
+## Technical Architecture
+
+### Stack
+-   **Framework**: Next.js 15+ (App Router)
+-   **Styling**: Tailwind CSS v4
+-   **Content**: `gray-matter` for frontmatter, `react-markdown` for rendering.
+-   **Icons**: `lucide-react`
+
+### Data Fetching
+-   **`src/lib/markdown.ts`**: Central utility for fetching and parsing markdown content.
+    -   `getAllCampaigns()`: Fetches campaign metadata.
+    -   `getCampaignBySlug()`: Fetches single campaign details.
+    -   `getAllScenarios()`: Fetches scenarios for a specific campaign.
+    -   `getAllPosts()`: Generic fetcher for flat content (Characters, Rules).
+
+### Routing Structure
+-   `/`: Home page (Hero, Spotlight).
+-   `/campaigns`: List of campaigns.
+-   `/campaigns/[slug]`: Campaign detail & scenario list.
+-   `/campaigns/[slug]/[scenario]`: Scenario reading view.
+-   `/characters`: Character gallery.
+-   `/characters/[id]`: Character profile.
+-   `/rules`: Rules index.
+-   `/rules/[slug]`: Rule section detail.
+
+## Verification Plan
+
+### Automated Tests
+-   `npm run dev`: Ensure build success and runtime stability.
+-   **Browser Tests**: Verify navigation flows and rendering.
+
+### Manual Verification
+-   **Theming**: Verify global theme and campaign-specific overrides.
+-   **Content**: Check markdown rendering, image loading, and link navigation.
+-   **Navigation**: Verify Breadcrumbs and Previous/Next links work correctly.
+-   **Responsiveness**: Ensure layout adapts to mobile and desktop screens.
 - **Characters** (`src/app/characters/`):
   - Listing page fetching data from `content/characters`.
   - Dynamic character sheets with stats and backstory.
-- **Rules** (`src/app/rules/`):
   - Listing page fetching data from `content/rules`.
   - Dynamic rule pages rendering Markdown.
 - **Markdown Renderer** (`src/components/MarkdownRenderer.tsx`):

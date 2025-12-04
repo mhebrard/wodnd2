@@ -34,11 +34,37 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 - **Dynamic Character Sheet**: Detailed view with stats, backstory, and combat information.
 - **Markdown Support**: Backstories are rendered from markdown files.
 
-### 4. Rules Section
+## Verification Results
 
-- **Rules List**: Browse all game rules (Core, Combat, Magic, etc.).
-- **Rule Detail**: Read individual rule documents formatted with markdown.
-- **Navigation**: Dedicated "Rules" link in the Navbar.
+### Rules Feature
+- [x] **Navigation**: "Rules" link appears in Navbar.
+- [x] **Rules List**: `/rules` displays all rule categories (Core Rules, Character Creation, Magic, Combat & Equipment).
+- [x] **Rule Details**: Clicking a rule card navigates to the correct detail page (e.g., `/rules/core-rules`).
+- [x] **TOC**: Table of Contents renders correctly and links to sections.
+- [x] **Styling**: Pages use the primary color (Amber) for headers and accents.
+
+### Campaign Rework
+- [x] **Navigation**: "Rules" link moved next to "Home".
+- [x] **Campaign List**: `/campaigns` displays "The Lost Mines" and "Demon Hunter" with their respective theme colors.
+- [x] **Dynamic Theming**:
+    - "The Lost Mines" uses Amber/Red theme.
+    - "Demon Hunter" uses Purple/Blue theme.
+- [x] **Scenario Navigation**:
+    - Can navigate from Campaign List -> Campaign Detail -> Scenario View.
+    - Breadcrumbs work correctly.
+- [x] **Content**:
+    - Scenarios render correctly with images.
+    - Markdown content is styled with the active theme.
+### Navigation Enhancements
+- [x] **Breadcrumbs**:
+    - Appears on Campaign Detail, Scenario View, and Rule Detail pages.
+    - Correctly links back to parent pages (e.g., Home > Campaigns > Campaign Name).
+- [x] **Pagination**:
+    - "Previous" and "Next" links appear at the bottom of Scenario and Rule pages.
+    - Correctly navigates to the adjacent content based on explicit order.
+- [x] **Ordering**:
+    - Rules are sorted by `order` field (Core -> Character Creation -> ...).
+    - Scenarios are sorted by `order` field (Scenario 1 -> Scenario 2).
 
 ### 4. Technical Setup
 

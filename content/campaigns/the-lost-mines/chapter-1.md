@@ -1,7 +1,9 @@
 ---
-title: "The Lost Mines"
+title: "Chapter 1: The Gathering"
 date: "2023-10-01"
-description: "A group of adventurers seek the lost mines of Phandelver."
+order: 1
+description: "The party gathers in the tavern..."
+campaign: "the-lost-mines"
 ---
 
 # The Lost Mines
