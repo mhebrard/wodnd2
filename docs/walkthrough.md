@@ -13,6 +13,7 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 ### 2. Campaign Management
 
 - **Campaign List**: Displays all available campaigns with descriptions and dates.
+- **Visuals**: Cards feature a thematic "Open Book" watermark icon.
 - **Story View**: Renders markdown content for each campaign.
 - **Collapsible Sections**: Supported custom directives for Rules and HRP (Hors Roleplay) sections.
   - Usage in Markdown:
@@ -43,6 +44,7 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 
 - **Next.js App Router**: Modern routing architecture.
 - **Tailwind CSS**: Premium, responsive styling with a dark mode aesthetic.
+  - **Typography Plugin**: `@tailwindcss/typography` used for beautiful markdown styling.
 - **Static Export**: Configured `output: 'export'` in `next.config.ts` for GitHub Pages compatibility.
 - **Markdown Parsing**: Custom utility to parse frontmatter and content, including support for custom directives.
 

@@ -27,12 +27,12 @@ export default function Home() {
           </div>
         </Link>
         <Link href="/characters" className="block group">
-          <div className="bg-surface p-6 rounded-xl border border-slate-800 hover:border-secondary/50 transition-all hover:shadow-lg hover:shadow-secondary/10 h-full">
-            <h2 className="text-2xl font-bold text-secondary mb-4 group-hover:text-secondary-hover transition-colors font-[family-name:var(--font-cinzel)]">Character Spotlight</h2>
+          <div className="bg-surface p-6 rounded-xl border border-slate-800 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10 h-full">
+            <h2 className="text-2xl font-bold text-primary mb-4 group-hover:text-primary-hover transition-colors font-[family-name:var(--font-cinzel)]">Character Spotlight</h2>
             <p className="text-text-muted mb-4 font-sans">
               Discover the backgrounds, stats, and stories of the brave (and sometimes foolish) adventurers who shape these worlds.
             </p>
-            <span className="text-secondary hover:text-secondary-hover font-medium font-[family-name:var(--font-cinzel)] group-hover:underline">
+            <span className="text-primary hover:text-primary-hover font-medium font-[family-name:var(--font-cinzel)] group-hover:underline">
               View Characters &rarr;
             </span>
           </div>

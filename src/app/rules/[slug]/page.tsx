@@ -15,8 +15,8 @@ export default async function RulePage({ params }: { params: Promise<{ slug: str
         <div className="max-w-4xl mx-auto">
             <div className="mb-8 border-b border-slate-800 pb-4">
                 <div className="flex items-center gap-3 mb-2">
-                    <Book className="h-8 w-8 text-secondary" />
-                    <h1 className="text-4xl font-bold text-secondary font-[family-name:var(--font-cinzel)]">{post.title}</h1>
+                    <Book className="h-8 w-8 text-primary" />
+                    <h1 className="text-4xl font-bold text-primary font-[family-name:var(--font-cinzel)]">{post.title}</h1>
                 </div>
             </div>
 

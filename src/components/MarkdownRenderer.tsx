@@ -1,6 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkDirective from 'remark-directive';
+import rehypeSlug from 'rehype-slug';
 import { visit } from 'unist-util-visit';
 import { AlertTriangle, Info, Scroll } from 'lucide-react';
 import type { Plugin } from 'unified';
@@ -42,6 +43,7 @@ const MarkdownRenderer = ({ content }: MarkdownRendererProps) => {
         <article className="prose prose-invert prose-red max-w-none">
             <ReactMarkdown
                 remarkPlugins={[remarkGfm, remarkDirective, remarkDirectivePlugin]}
+                rehypePlugins={[rehypeSlug]}
                 components={{
                     details: ({ node, children, className, ...props }) => {
                         if (className?.includes('rules-section')) {

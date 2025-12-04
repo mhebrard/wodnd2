@@ -18,6 +18,7 @@
 - [x] Styling & Polish
   - [x] Apply Premium Design (Tailwind CSS)
   - [x] Responsive Design
+  - [x] UI Polish (Watermarks, Hover effects)
 - [x] Deployment Prep
   - [x] Configure for GitHub Pages
   - [x] Create GitHub Actions Workflow
