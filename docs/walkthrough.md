@@ -29,6 +29,11 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 - **Dynamic Character Sheet**: Detailed view with stats, backstory, and combat information.
 - **Markdown Support**: Backstories are rendered from markdown files.
 
+### 4. Rules Section
+- **Rules List**: Browse all game rules (Core, Combat, Magic, etc.).
+- **Rule Detail**: Read individual rule documents formatted with markdown.
+- **Navigation**: Dedicated "Rules" link in the Navbar.
+
 ### 4. Technical Setup
 - **Next.js App Router**: Modern routing architecture.
 - **Tailwind CSS**: Premium, responsive styling with a dark mode aesthetic.
@@ -44,6 +49,8 @@ Ran `npm run build` successfully. The static export generated the following rout
 - `/campaigns/[slug]` (Story View)
 - `/characters` (List)
 - `/characters/[id]` (Character Sheet)
+- `/rules` (List)
+- `/rules/[slug]` (Rule Detail)
 
 ### Manual Testing
 - Verified navigation between pages.

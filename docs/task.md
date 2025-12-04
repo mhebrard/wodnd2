@@ -18,5 +18,13 @@
 - [x] Styling & Polish
     - [x] Apply Premium Design (Tailwind CSS)
     - [x] Responsive Design
-- [ ] Deployment Prep
+- [x] Deployment Prep
     - [x] Configure for GitHub Pages
+    - [x] Create GitHub Actions Workflow
+    - [x] Create GitHub Actions Workflow
+- [x] Rules Feature
+    - [x] Create Content Structure
+    - [x] Update Navbar
+    - [x] Create Rules Listing Page
+    - [x] Create Rules Detail Page
+    - [x] Verify Rules Feature
