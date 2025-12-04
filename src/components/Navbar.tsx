@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BookOpen, Users, ScrollText, Home } from 'lucide-react';
+import { BookOpen, Users, ScrollText, Home, Book } from 'lucide-react';
 
 const Navbar = () => {
     return (
@@ -25,6 +25,10 @@ const Navbar = () => {
                             <Link href="/characters" className="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-bold hover:bg-surface-hover hover:text-secondary transition-colors font-[family-name:var(--font-cinzel)]">
                                 <Users className="h-4 w-4" />
                                 <span>Characters</span>
+                            </Link>
+                            <Link href="/rules" className="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-bold hover:bg-surface-hover hover:text-secondary transition-colors font-[family-name:var(--font-cinzel)]">
+                                <Book className="h-4 w-4" />
+                                <span>Rules</span>
                             </Link>
                         </div>
                     </div>
