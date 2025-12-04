@@ -3,20 +3,22 @@
 @tailwind utilities;
 
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --font-inter: 'Inter', sans-serif;
   --font-cinzel: 'Cinzel', serif;
 
   /* Semantic Colors */
-  --color-primary: #b91c1c;
-  /* red-700 */
-  --color-primary-hover: #991b1b;
-  /* red-800 */
-  --color-secondary: #d97706;
+  /* Semantic Colors */
+  --color-primary: #d97706;
   /* amber-600 */
-  --color-secondary-hover: #b45309;
+  --color-primary-hover: #b45309;
   /* amber-700 */
+  --color-secondary: #ef4444;
+  /* red-500 */
+  --color-secondary-hover: #dc2626;
+  /* red-600 */
   --color-background: #020617;
   /* slate-950 */
   --color-surface: #0f172a;
@@ -39,4 +41,15 @@
   --color-surface-hover: var(--color-surface-hover);
   --color-text-main: var(--color-text-main);
   --color-text-muted: var(--color-text-muted);
+}
+
+/* Custom Prose Styles */
+.prose a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.prose a:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
 }

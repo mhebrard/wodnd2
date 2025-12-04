@@ -19,17 +19,23 @@ export default function CampaignsPage() {
                         href={`/campaigns/${campaign.slug}`}
                         className="block group"
                     >
-                        <div className="bg-surface rounded-xl border border-slate-800 p-6 h-full hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10">
-                            <div className="flex items-center justify-between mb-4">
-                                <BookOpen className="h-6 w-6 text-primary" />
-                                <span className="text-xs text-slate-500 font-mono">{campaign.date}</span>
+                        <div className="bg-surface rounded-xl border border-slate-800 p-6 h-full hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10 relative overflow-hidden">
+                            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                                <BookOpen className="h-24 w-24 text-primary" />
                             </div>
-                            <h2 className="text-xl font-bold text-text-main group-hover:text-primary-hover transition-colors mb-2 font-[family-name:var(--font-cinzel)]">
-                                {campaign.title}
-                            </h2>
-                            <p className="text-text-muted text-sm line-clamp-3 font-sans">
-                                {campaign.description}
-                            </p>
+
+                            <div className="relative z-10">
+                                <div className="flex items-center justify-between mb-4">
+                                    <BookOpen className="h-6 w-6 text-primary" />
+                                    <span className="text-xs text-slate-500 font-mono">{campaign.date}</span>
+                                </div>
+                                <h2 className="text-xl font-bold text-text-main group-hover:text-primary-hover transition-colors mb-2 font-[family-name:var(--font-cinzel)]">
+                                    {campaign.title}
+                                </h2>
+                                <p className="text-text-muted text-sm line-clamp-3 font-sans">
+                                    {campaign.description}
+                                </p>
+                            </div>
                         </div>
                     </Link>
                 ))}

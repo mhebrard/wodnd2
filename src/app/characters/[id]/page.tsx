@@ -24,13 +24,13 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
             {/* Header */}
             <div className="bg-surface rounded-xl border border-slate-800 p-8 mb-8 relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-8 opacity-5">
-                    <Shield className="h-64 w-64 text-secondary" />
+                    <Shield className="h-64 w-64 text-primary" />
                 </div>
 
                 <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
                     <div>
-                        <div className="flex items-center gap-3 text-secondary font-mono text-sm mb-2">
-                            <span className="bg-secondary/10 px-2 py-1 rounded border border-secondary/20">{post.campaign}</span>
+                        <div className="flex items-center gap-3 text-primary font-mono text-sm mb-2">
+                            <span className="bg-primary/10 px-2 py-1 rounded border border-primary/20">{post.campaign}</span>
                             <span className="text-text-muted">Level {post.level}</span>
                         </div>
                         <h1 className="text-5xl font-bold text-text-main mb-2 font-[family-name:var(--font-cinzel)]">{post.name}</h1>

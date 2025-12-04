@@ -20,8 +20,8 @@ Create a web app for "WoDnD2", an adaptation of World of Darkness (God-Machine v
 - **Rebranding**: Project named "WoDnD2".
 - **Theme**: "Gothic Fantasy"
   - **Background**: Dark (`slate-950`)
-  - **Primary Accent**: Crimson Red (`#b91c1c`)
-  - **Secondary Accent**: Amber (`#d97706`)
+  - **Primary Accent**: Amber (`#d97706`) - Used for main interactive elements, links, and headings.
+  - **Secondary Accent**: Red (`#ef4444`) - Used for specific highlights and HRP sections.
   - **Typography**: `Cinzel` (Headings) + `Inter` (Body)
 - **Centralized Palette**: Colors defined as CSS variables in `src/app/globals.css` for easy theming.
 
@@ -32,9 +32,10 @@ Create a web app for "WoDnD2", an adaptation of World of Darkness (God-Machine v
   - **Clickable Cards**: "Latest Stories" and "Character Spotlight" cards are fully clickable links.
 - **Navbar** (`src/components/Navbar.tsx`):
   - Responsive navigation with theme-aware styling.
-  - **Improved Visibility**: Links are **bold** and hover color is **Amber** (`secondary`).
+  - **Improved Visibility**: Links are **bold** and hover color is **Primary** (Amber).
 - **Campaigns** (`src/app/campaigns/`):
   - Listing page fetching data from `content/campaigns`.
+  - **UI Polish**: Campaign cards feature a large "Open Book" watermark icon.
   - Dynamic story pages rendering Markdown.
 - **Characters** (`src/app/characters/`):
   - Listing page fetching data from `content/characters`.
