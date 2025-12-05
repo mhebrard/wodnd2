@@ -21,8 +21,16 @@
   - [x] **Breadcrumbs Component** (Hierarchical navigation)
   - [x] **PaginationNav Component** (Previous/Next navigation)
 
+- [x] **Landing Page**
+  - [x] **Data Logic**: Implement `getLatestScenario()` and `getLatestCharacter()`
+  - [x] **Hero Section**: Neutral title with dynamic highlights
+  - [x] **Latest Updates**: Cards for newest Scenario and Character
+  - [x] **Theming**: Dynamic card colors based on campaign
+
 - [x] **Characters Module**
   - [x] Character List Page
+    - [x] Dynamic Theming (Campaign colors)
+    - [x] Campaign Name Tags
   - [x] Character Detail Page
   - [x] Sample Content (Grommash)
 
@@ -44,6 +52,8 @@
   - [x] **Content**
     - [x] "The Lost Mines" (Amber/Red Theme)
     - [x] "Demon Hunter" (Purple/Blue Theme)
+  - [x] **UI Polish**
+    - [x] Add watermark icon to scenario cards <!-- id: 4 -->
 
 ## Styling & Polish
 - [x] **Visual Design**
@@ -51,13 +61,3 @@
   - [x] Glassmorphism effects
   - [x] Hover animations and transitions
   - [x] Custom typography styling (`@tailwindcss/typography`)
-
-## Documentation & Deployment
-- [x] **Documentation**
-  - [x] Implementation Plan
-  - [x] Task List
-  - [x] Walkthrough
-  - [x] Test Plans
-- [x] **Deployment**
-  - [x] GitHub Pages Configuration
-  - [x] GitHub Actions Workflow

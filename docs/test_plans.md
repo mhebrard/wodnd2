@@ -50,3 +50,16 @@
         -   **Verify**: "Next Chapter" link points to "The Subway Hunt" (Order 2).
         -   Click "Next Chapter".
         -   **Verify**: "Previous Chapter" link points to "The Awakening" (Order 1).
+
+8.  **Dynamic Landing Page & Character Theming**
+    -   **Landing Page**:
+        -   Go to `http://localhost:3000`.
+        -   **Verify**: Hero title uses neutral colors (Slate-200/500).
+        -   **Verify**: "Latest Scenario" card displays campaign name (e.g., "Demon Hunter") in top-left tag.
+        -   **Verify**: "New Challenger" card displays campaign name (e.g., "The Lost Mines") in top-left tag.
+        -   **Verify**: Cards use correct campaign theme colors.
+    -   **Characters Page**:
+        -   Go to `http://localhost:3000/characters`.
+        -   **Verify**: Character cards display Campaign Name in top-left styled tag.
+        -   **Verify**: Level is displayed in top-right.
+        -   **Verify**: Each card uses its campaign's specific theme colors.

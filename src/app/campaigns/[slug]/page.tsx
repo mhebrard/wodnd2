@@ -53,16 +53,21 @@ export default async function CampaignPage({ params }: { params: Promise<{ slug:
                         <div
                             className="bg-surface rounded-xl border border-slate-800 p-6 h-full transition-all hover:shadow-lg relative overflow-hidden hover:border-[color:var(--color-primary)] hover:shadow-[color:var(--color-primary)]/10"
                         >
-                            <div className="flex items-center justify-between mb-4">
-                                <Scroll className="h-6 w-6" style={{ color: 'var(--color-primary)' }} />
-                                <span className="text-xs text-slate-500 font-mono">{scenario.date}</span>
+                            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                                <Scroll className="h-24 w-24 text-[color:var(--color-primary)]" />
                             </div>
-                            <h2 className="text-xl font-bold text-text-main group-hover:text-[color:var(--color-primary)] transition-colors mb-2 font-[family-name:var(--font-cinzel)]">
-                                {scenario.title}
-                            </h2>
-                            <p className="text-text-muted text-sm line-clamp-3 font-sans">
-                                {scenario.description}
-                            </p>
+                            <div className="relative z-10">
+                                <div className="flex items-center justify-between mb-4">
+                                    <Scroll className="h-6 w-6" style={{ color: 'var(--color-primary)' }} />
+                                    <span className="text-xs text-slate-500 font-mono">{scenario.date}</span>
+                                </div>
+                                <h2 className="text-xl font-bold text-text-main group-hover:text-[color:var(--color-primary)] transition-colors mb-2 font-[family-name:var(--font-cinzel)]">
+                                    {scenario.title}
+                                </h2>
+                                <p className="text-text-muted text-sm line-clamp-3 font-sans">
+                                    {scenario.description}
+                                </p>
+                            </div>
                         </div>
                     </Link>
                 ))}

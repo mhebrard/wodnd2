@@ -65,6 +65,36 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 - [x] **Ordering**:
     - Rules are sorted by `order` field (Core -> Character Creation -> ...).
     - Scenarios are sorted by `order` field (Scenario 1 -> Scenario 2).
+    - Rules are sorted by `order` field (Core -> Character Creation -> ...).
+    - Scenarios are sorted by `order` field (Scenario 1 -> Scenario 2).
+
+### Dynamic Landing Page
+- [x] **Hero Section**: Title uses neutral gray tones.
+- [x] **Dynamic Theme**: Page adopts the colors of the latest scenario (e.g., Purple/Blue if Demon Hunter is latest).
+- [x] **Latest Updates**:
+    - "Latest Scenario" card displays the most recent scenario with correct metadata.
+    - "New Challenger" card displays the most recent character.
+    - Cards link correctly to their respective detail pages.
+
+    - "New Challenger" card displays the most recent character.
+    - Cards link correctly to their respective detail pages.
+    - **Campaign Names**: Cards now display the specific campaign name (e.g., "Demon Hunter", "The Lost Mines") instead of generic labels.
+    - **Character Page Theming**: Character cards on the `/characters` page now dynamically reflect their campaign's color theme.
+    - **Character Card Tags**: The top-left tag on character cards now displays the **Campaign Name** (styled with campaign colors), and the Level is displayed on the top-right.
+    - **Scenario Watermark**: Scenario cards in the campaign detail view now feature a subtle watermark icon (`Scroll`) in the top-right corner, consistent with other card designs.
+
+### Verification Media
+![Scenario Card Watermark](assets/scenario_card_watermark_1764907432909.png)
+
+![Dynamic Landing Page](assets/home_page_verify_1764904711947.png)
+
+![Campaign Names on Cards](assets/campaign_names_on_cards_1764905583128.png)
+
+![Character Page Theming](assets/characters_page_theming_1764905813051.png)
+
+![Character Card Tags Updated](assets/character_card_tags_updated_1764906035991.png)
+
+![Browser Verification Recording](assets/dynamic_landing_page_verification_v2_1764904699925.webp)
 
 ### 4. Technical Setup
 
