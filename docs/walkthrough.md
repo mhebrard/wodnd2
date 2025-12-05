@@ -7,7 +7,8 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 ### 1. Home Page
 
 - A premium landing page with a welcoming hero section.
-- Quick links to Campaigns and Characters.
+- **Dynamic Content**: Automatically displays the most recently released Scenario and Character.
+- **Dynamic Theming**: The landing page cards adopt the color theme of their respective campaigns.
 - Responsive layout with a dark, immersive theme.
 
 ### 2. Campaign Management
@@ -30,7 +31,9 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 
 ### 3. Character Sheets
 
-- **Character List**: Displays all characters with their class, race, and level.
+- **Character List**: Gallery of character cards with portraits and key details.
+- **Dynamic Theming**: Character cards adopt the primary/secondary colors of their assigned campaign.
+- **Card Layout**: Campaign name displayed in a styled tag (top-left), Level on the right.
 - **Dynamic Character Sheet**: Detailed view with stats, backstory, and combat information.
 - **Markdown Support**: Backstories are rendered from markdown files.
 
@@ -43,8 +46,7 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 - [x] **TOC**: Table of Contents renders correctly and links to sections.
 - [x] **Styling**: Pages use the primary color (Amber) for headers and accents.
 
-### Campaign Rework
-- [x] **Navigation**: "Rules" link moved next to "Home".
+### Campaign Features
 - [x] **Campaign List**: `/campaigns` displays "The Lost Mines" and "Demon Hunter" with their respective theme colors.
 - [x] **Dynamic Theming**:
     - "The Lost Mines" uses Amber/Red theme.
@@ -55,7 +57,10 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 - [x] **Content**:
     - Scenarios render correctly with images.
     - Markdown content is styled with the active theme.
-### Navigation Enhancements
+- [x] **UI Polish**:
+    - Scenario cards feature a watermark icon (`Scroll`) for visual consistency.
+
+### Navigation
 - [x] **Breadcrumbs**:
     - Appears on Campaign Detail, Scenario View, and Rule Detail pages.
     - Correctly links back to parent pages (e.g., Home > Campaigns > Campaign Name).
@@ -65,36 +70,22 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 - [x] **Ordering**:
     - Rules are sorted by `order` field (Core -> Character Creation -> ...).
     - Scenarios are sorted by `order` field (Scenario 1 -> Scenario 2).
-    - Rules are sorted by `order` field (Core -> Character Creation -> ...).
-    - Scenarios are sorted by `order` field (Scenario 1 -> Scenario 2).
 
 ### Dynamic Landing Page
 - [x] **Hero Section**: Title uses neutral gray tones.
-- [x] **Dynamic Theme**: Page adopts the colors of the latest scenario (e.g., Purple/Blue if Demon Hunter is latest).
+- [x] **Dynamic Theme**: Cards adopt the colors of their respective campaigns.
 - [x] **Latest Updates**:
     - "Latest Scenario" card displays the most recent scenario with correct metadata.
     - "New Challenger" card displays the most recent character.
     - Cards link correctly to their respective detail pages.
-
-    - "New Challenger" card displays the most recent character.
-    - Cards link correctly to their respective detail pages.
-    - **Campaign Names**: Cards now display the specific campaign name (e.g., "Demon Hunter", "The Lost Mines") instead of generic labels.
-    - **Character Page Theming**: Character cards on the `/characters` page now dynamically reflect their campaign's color theme.
-    - **Character Card Tags**: The top-left tag on character cards now displays the **Campaign Name** (styled with campaign colors), and the Level is displayed on the top-right.
-    - **Scenario Watermark**: Scenario cards in the campaign detail view now feature a subtle watermark icon (`Scroll`) in the top-right corner, consistent with other card designs.
+    - **Campaign Names**: Cards display the specific campaign name (e.g., "Demon Hunter", "The Lost Mines").
 
 ### Verification Media
-![Scenario Card Watermark](assets/scenario_card_watermark_1764907432909.png)
-
 ![Dynamic Landing Page](assets/home_page_verify_1764904711947.png)
 
-![Campaign Names on Cards](assets/campaign_names_on_cards_1764905583128.png)
-
-![Character Page Theming](assets/characters_page_theming_1764905813051.png)
+![Scenario Card Watermark](assets/scenario_card_watermark_1764907432909.png)
 
 ![Character Card Tags Updated](assets/character_card_tags_updated_1764906035991.png)
-
-![Browser Verification Recording](assets/dynamic_landing_page_verification_v2_1764904699925.webp)
 
 ### 4. Technical Setup
 
