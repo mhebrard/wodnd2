@@ -1,9 +1,21 @@
 import Link from "next/link";
-import { getAllPosts } from "@/lib/markdown";
+import { getAllPosts, getAllCampaigns } from "@/lib/markdown";
 import { Users, Shield, Sword, Scroll } from "lucide-react";
 
 export default function CharactersPage() {
     const characters = getAllPosts(["name", "class", "race", "level", "campaign", "slug"], "characters");
+    const campaigns = getAllCampaigns(["title", "slug", "primaryColor", "secondaryColor"]);
+
+    // Create a map for easy lookup: Title -> Colors
+    const campaignColorMap = campaigns.reduce((acc, campaign) => {
+        if (campaign.title) {
+            acc[campaign.title] = {
+                primary: campaign.primaryColor,
+                secondary: campaign.secondaryColor
+            };
+        }
+        return acc;
+    }, {} as Record<string, { primary: string, secondary: string }>);
 
     return (
         <div className="space-y-8">
@@ -13,45 +25,56 @@ export default function CharactersPage() {
             </div>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {characters.map((char) => (
-                    <Link
-                        key={char.slug}
-                        href={`/characters/${char.slug}`}
-                        className="block group"
-                    >
-                        <div className="bg-surface rounded-xl border border-slate-800 p-6 h-full hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                                <Users className="h-24 w-24 text-primary" />
-                            </div>
+                {characters.map((char) => {
+                    const theme = campaignColorMap[char.campaign];
+                    const style = theme ? {
+                        '--color-primary': theme.primary,
+                        '--color-secondary': theme.secondary,
+                    } as React.CSSProperties : {};
 
-                            <div className="relative z-10">
-                                <div className="flex items-center justify-between mb-4">
-                                    <span className="px-2 py-1 bg-surface-hover rounded text-xs text-primary font-mono border border-slate-700">
-                                        Lvl {char.level}
-                                    </span>
-                                    <span className="text-xs text-slate-500 font-mono">{char.campaign}</span>
+                    return (
+                        <Link
+                            key={char.slug}
+                            href={`/characters/${char.slug}`}
+                            className="block group"
+                        >
+                            <div
+                                className="bg-surface rounded-xl border border-slate-800 p-6 h-full hover:border-[color:var(--color-primary)]/50 transition-all hover:shadow-lg hover:shadow-[color:var(--color-primary)]/10 relative overflow-hidden"
+                                style={style}
+                            >
+                                <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                                    <Users className="h-24 w-24 text-[color:var(--color-primary)]" />
                                 </div>
 
-                                <h2 className="text-xl font-bold text-text-main group-hover:text-primary-hover transition-colors mb-1 font-[family-name:var(--font-cinzel)]">
-                                    {char.name}
-                                </h2>
+                                <div className="relative z-10">
+                                    <div className="flex items-center justify-between mb-4">
+                                        <span className="px-2 py-1 bg-surface-hover rounded text-xs text-[color:var(--color-primary)] font-bold uppercase tracking-wider border border-[color:var(--color-primary)]">
+                                            {char.campaign}
+                                        </span>
+                                        <span className="text-xs text-slate-500 font-mono">Lvl {char.level}</span>
+                                    </div>
 
-                                <div className="flex items-center gap-2 text-sm text-text-muted mb-4 font-sans">
-                                    <span>{char.race}</span>
-                                    <span>•</span>
-                                    <span>{char.class}</span>
-                                </div>
+                                    <h2 className="text-xl font-bold text-text-main group-hover:text-[color:var(--color-primary)] transition-colors mb-1 font-[family-name:var(--font-cinzel)]">
+                                        {char.name}
+                                    </h2>
 
-                                <div className="flex gap-2 mt-4">
-                                    <div className="flex items-center gap-1 text-xs text-slate-500 bg-slate-950/50 px-2 py-1 rounded">
-                                        <Shield className="h-3 w-3" />
-                                        <span>View Sheet</span>
+                                    <div className="flex items-center gap-2 text-sm text-text-muted mb-4 font-sans">
+                                        <span>{char.race}</span>
+                                        <span>•</span>
+                                        <span>{char.class}</span>
+                                    </div>
+
+                                    <div className="flex gap-2 mt-4">
+                                        <div className="flex items-center gap-1 text-xs text-slate-500 bg-slate-950/50 px-2 py-1 rounded group-hover:text-[color:var(--color-secondary)] transition-colors">
+                                            <Shield className="h-3 w-3" />
+                                            <span>View Sheet</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </Link>
-                ))}
+                        </Link>
+                    );
+                })}
             </div>
         </div>
     );

@@ -11,14 +11,14 @@
 
   /* Semantic Colors */
   /* Semantic Colors */
-  --color-primary: #d97706;
-  /* amber-600 */
-  --color-primary-hover: #b45309;
-  /* amber-700 */
-  --color-secondary: #ef4444;
-  /* red-500 */
-  --color-secondary-hover: #dc2626;
-  /* red-600 */
+  --color-primary: #e2e8f0;
+  /* slate-200 */
+  --color-primary-hover: #cbd5e1;
+  /* slate-300 */
+  --color-secondary: #64748b;
+  /* slate-500 */
+  --color-secondary-hover: #475569;
+  /* slate-600 */
   --color-background: #020617;
   /* slate-950 */
   --color-surface: #0f172a;
@@ -29,6 +29,21 @@
   /* slate-200 */
   --color-text-muted: #94a3b8;
   /* slate-400 */
+
+  /* Palette Colors */
+  --color-red: #ff3333;
+  --color-orange: #ff9933;
+  --color-yellow: #ffff33;
+  --color-lime: #99ff33;
+  --color-green: #33ff33;
+  --color-emerald: #33ff99;
+  --color-cyan: #33ffff;
+  --color-blue: #3399ff;
+  --color-indigo: #3333ff;
+  --color-purple: #9933ff;
+  --color-pink: #ff33ff;
+  --color-fuchsia: #ff3399;
+
 }
 
 @theme {

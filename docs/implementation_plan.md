@@ -9,12 +9,16 @@ Create a modern, immersive web interface for the "World of Dungeons & Dragons 2"
 -   **Global Theme**: Dark mode default, "Gothic Fantasy" aesthetic.
 -   **Typography**: `Cinzel` for headings, `Inter` for body text.
 -   **Dynamic Theming**: Support for per-campaign color schemes that override the global theme.
-    -   **Global Default**: Amber (Primary) / Red (Secondary).
+    -   **Global Default**: Neutral Gray (Primary) / Slate (Secondary).
     -   **Campaign Specific**: Each campaign defines its own Primary and Secondary colors in metadata.
 
 ### 2. Navigation
 -   **Navbar**: Responsive navigation with links to Home, Rules, Campaigns, and Characters.
--   **Breadcrumbs**: Contextual navigation within Campaign and Rule sections.
+-   **Breadcrumbs**: Reusable component for hierarchical navigation.
+    -   Used in Campaign Detail, Scenario View, and Rule Detail pages.
+-   **Pagination**: "Previous" and "Next" links for sequential content (Scenarios, Rules).
+    -   Logic respects explicit `order` field in frontmatter.
+-   **Explicit Ordering**: Content sorting based on `order` field (ascending) falling back to `date` (descending).
 
 ### 3. Content Management (Markdown)
 -   **Structure**:
@@ -30,19 +34,29 @@ Create a modern, immersive web interface for the "World of Dungeons & Dragons 2"
 ### 4. Campaigns Feature
 -   **Campaign List**: Grid view of available campaigns, styled with their specific theme colors.
 -   **Campaign Detail**: Overview of a campaign, listing its scenarios.
+    -   **UI Update**: Add watermark icon (`Scroll`) to scenario cards for visual consistency.
 -   **Scenario View**: Immersive reading view for campaign chapters/scenarios, applying the campaign's unique color theme.
 
 ### 5. Characters Feature
 -   **Character List**: Gallery of character cards with portraits and key details.
+    -   **Dynamic Theming**: Character cards adopt the primary/secondary colors of their assigned campaign.
+    -   **Card Layout**: Campaign name displayed in a styled tag (top-left), Level on the right.
 -   **Character Detail**: Comprehensive view including stats, backstory, and equipment.
 
-### 7. Navigation Enhancements
--   **Breadcrumbs**: Reusable component for hierarchical navigation.
-    -   Used in Campaign Detail, Scenario View, and Rule Detail pages.
--   **Pagination**: "Previous" and "Next" links for sequential content.
-    -   Used in Scenario View (next/prev scenario) and Rule Detail (next/prev rule).
-    -   Logic respects explicit `order` field in frontmatter.
--   **Explicit Ordering**: Content sorting based on `order` field (ascending) falling back to `date` (descending).
+### 6. Rules Feature
+-   **Rules Index**: List of rule categories.
+-   **Rule Detail**: Detailed view of a rule section with Table of Contents.
+
+### 7. Dynamic Landing Page
+-   **Concept**: The landing page reflects the "living" state of the world.
+-   **Theming Strategy**:
+    -   **Hero Section**: Uses neutral gray tones to provide a stable visual anchor.
+    -   **Dynamic Cards**: "Latest Scenario" and "New Challenger" cards dynamically adopt the color theme of their respective campaigns.
+-   **Content**:
+    -   **Hero**: Welcoming title and introduction.
+    -   **Latest Updates**: Automatically displays the most recently released Scenario and Character.
+-   **Data Fetching**:
+    -   Utilities to aggregate scenarios from all campaigns and identify the latest content based on date.
 
 ## Technical Architecture
 
@@ -58,9 +72,11 @@ Create a modern, immersive web interface for the "World of Dungeons & Dragons 2"
     -   `getCampaignBySlug()`: Fetches single campaign details.
     -   `getAllScenarios()`: Fetches scenarios for a specific campaign.
     -   `getAllPosts()`: Generic fetcher for flat content (Characters, Rules).
+    -   `getLatestScenario()`: Aggregates and sorts scenarios to find the newest release.
+    -   `getLatestCharacter()`: Sorts characters to find the newest addition.
 
 ### Routing Structure
--   `/`: Home page (Hero, Spotlight).
+-   `/`: Home page (Hero, Latest Updates).
 -   `/campaigns`: List of campaigns.
 -   `/campaigns/[slug]`: Campaign detail & scenario list.
 -   `/campaigns/[slug]/[scenario]`: Scenario reading view.
@@ -80,14 +96,9 @@ Create a modern, immersive web interface for the "World of Dungeons & Dragons 2"
 -   **Content**: Check markdown rendering, image loading, and link navigation.
 -   **Navigation**: Verify Breadcrumbs and Previous/Next links work correctly.
 -   **Responsiveness**: Ensure layout adapts to mobile and desktop screens.
-- **Characters** (`src/app/characters/`):
-  - Listing page fetching data from `content/characters`.
-  - Dynamic character sheets with stats and backstory.
-  - Listing page fetching data from `content/rules`.
-  - Dynamic rule pages rendering Markdown.
-- **Markdown Renderer** (`src/components/MarkdownRenderer.tsx`):
-  - Renders GitHub Flavored Markdown.
-  - Custom directives (`:::rules`, `:::hrp`) rendered as collapsible `<details>` sections.
+-   **Dynamic Features**:
+    -   Verify Landing Page cards display correct campaign colors and metadata.
+    -   Verify Character cards on listing page match their campaign themes.
 
 ### 3. Data Management
 
@@ -107,6 +118,8 @@ Create a modern, immersive web interface for the "World of Dungeons & Dragons 2"
 - [x] **Responsiveness**: Verified layout on desktop and mobile.
 - [x] **Interactivity**: Verified collapsible sections and navigation links.
 - [x] **Rules Feature**: Verified rules listing and detail pages.
+- [x] **Dynamic Landing**: Verified latest content fetching and card theming.
+- [x] **Character Theming**: Verified campaign colors on character cards.
 
 ## Future Improvements
 

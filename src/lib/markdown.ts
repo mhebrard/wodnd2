@@ -204,3 +204,34 @@ export function getScenarioBySlug(campaignSlug: string, scenarioSlug: string, fi
 
     return items;
 }
+
+export function getLatestScenario() {
+    const campaigns = getAllCampaigns(["slug", "title"]);
+    let allScenarios: { [key: string]: string }[] = [];
+
+    campaigns.forEach(campaign => {
+        const scenarios = getAllScenarios(campaign.slug, ["title", "date", "description", "slug", "campaign"]);
+        // Add campaign slug and title to each scenario for linking and display
+        const scenariosWithCampaign = scenarios.map(s => ({
+            ...s,
+            campaignSlug: campaign.slug,
+            campaignTitle: campaign.title
+        }));
+        allScenarios = [...allScenarios, ...scenariosWithCampaign];
+    });
+
+    // Sort by date descending
+    allScenarios.sort((a, b) => (a.date > b.date ? -1 : 1));
+
+    return allScenarios.length > 0 ? allScenarios[0] : null;
+}
+
+export function getLatestCharacter() {
+    const characters = getAllPosts(["name", "class", "level", "race", "campaign", "date", "slug"], "characters");
+    // Sort by date descending (already done in getAllPosts but good to be explicit if logic changes)
+    // getAllPosts sorts by order then date. Characters might not have order.
+    // Let's re-sort strictly by date for "latest"
+    characters.sort((a, b) => (a.date > b.date ? -1 : 1));
+
+    return characters.length > 0 ? characters[0] : null;
+}
