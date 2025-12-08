@@ -16,18 +16,8 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 - **Campaign List**: Displays all available campaigns with descriptions and dates.
 - **Visuals**: Cards feature a thematic "Open Book" watermark icon.
 - **Story View**: Renders markdown content for each campaign.
-- **Collapsible Sections**: Supported custom directives for Rules and HRP (Hors Roleplay) sections.
-  - Usage in Markdown:
-
-    ```markdown
-    :::rules
-    1. No metagaming.
-    :::
-
-    :::hrp
-    Next session is on Tuesday.
-    :::
-    ```
+- **Story View**: Renders markdown content for each campaign.
+- **Custom Directives**: Supports `:::rolls` for collapsible game mechanic sections, styled with the campaign's primary color.
 
 ### 3. Character Sheets
 
@@ -85,6 +75,15 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 
 ![Scenario Card Watermark](assets/scenario_card_watermark_1764907432909.png)
 
+
+
+### 3. Markdown Extensions
+**Goal**: Custom markdown directives for enhanced storytelling.
+
+**Verification**:
+- **Rolls Directive**: `:::rolls` renders a collapsible details section styled with the campaign's primary color.
+- **Visual Check**:
+  ![Rolls Section](docs/assets/rolls-section.png)
 ![Character Card Tags Updated](assets/character_card_tags_updated_1764906035991.png)
 
 ### 4. Technical Setup

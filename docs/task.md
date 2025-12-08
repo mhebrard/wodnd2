@@ -27,6 +27,9 @@
   - [x] **Latest Updates**: Cards for newest Scenario and Character
   - [x] **Theming**: Dynamic card colors based on campaign
 
+- [x] **Markdown Extensions**
+  - [x] Implement `:::rolls` directive (Collapsible, Primary Color)
+
 - [x] **Characters Module**
   - [x] Character List Page
     - [x] Dynamic Theming (Campaign colors)
@@ -53,7 +56,7 @@
     - [x] "The Lost Mines" (Amber/Red Theme)
     - [x] "Demon Hunter" (Purple/Blue Theme)
   - [x] **UI Polish**
-    - [x] Add watermark icon to scenario cards <!-- id: 4 -->
+    - [x] Add watermark icon to scenario cards
 
 ## Styling & Polish
 - [x] **Visual Design**

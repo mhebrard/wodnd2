@@ -3,7 +3,7 @@ import remarkGfm from 'remark-gfm';
 import remarkDirective from 'remark-directive';
 import rehypeSlug from 'rehype-slug';
 import { visit } from 'unist-util-visit';
-import { AlertTriangle, Info, Scroll } from 'lucide-react';
+import { Dices } from 'lucide-react';
 import type { Plugin } from 'unified';
 import type { Node } from 'unist';
 
@@ -23,12 +23,9 @@ const remarkDirectivePlugin: Plugin = () => {
                 const data = node.data || (node.data = {});
                 const tagName = node.type === 'textDirective' ? 'span' : 'div';
 
-                if (node.name === 'rules') {
+                if (node.name === 'rolls') {
                     data.hName = 'details';
-                    data.hProperties = { className: 'rules-section group' };
-                } else if (node.name === 'hrp') {
-                    data.hName = 'details';
-                    data.hProperties = { className: 'hrp-section group' };
+                    data.hProperties = { className: 'rolls-section group' };
                 } else {
                     data.hName = tagName;
                     data.hProperties = { className: node.name };
@@ -46,25 +43,12 @@ const MarkdownRenderer = ({ content }: MarkdownRendererProps) => {
                 rehypePlugins={[rehypeSlug]}
                 components={{
                     details: ({ node, children, className, ...props }) => {
-                        if (className?.includes('rules-section')) {
+                        if (className?.includes('rolls-section')) {
                             return (
                                 <details className="my-4 bg-surface/50 border border-primary/30 rounded-lg overflow-hidden group" {...props}>
                                     <summary className="flex items-center gap-2 px-4 py-3 bg-primary/10 cursor-pointer hover:bg-primary/20 transition-colors font-bold text-primary select-none font-[family-name:var(--font-cinzel)]">
-                                        <Scroll className="h-4 w-4" />
-                                        <span>Rules</span>
-                                    </summary>
-                                    <div className="p-4 text-text-muted font-sans">
-                                        {children}
-                                    </div>
-                                </details>
-                            );
-                        }
-                        if (className?.includes('hrp-section')) {
-                            return (
-                                <details className="my-4 bg-surface/50 border border-secondary/30 rounded-lg overflow-hidden group" {...props}>
-                                    <summary className="flex items-center gap-2 px-4 py-3 bg-secondary/10 cursor-pointer hover:bg-secondary/20 transition-colors font-bold text-secondary select-none font-[family-name:var(--font-cinzel)]">
-                                        <AlertTriangle className="h-4 w-4" />
-                                        <span>HRP (Hors Roleplay)</span>
+                                        <Dices className="h-4 w-4" />
+                                        <span>Rolls</span>
                                     </summary>
                                     <div className="p-4 text-text-muted font-sans">
                                         {children}

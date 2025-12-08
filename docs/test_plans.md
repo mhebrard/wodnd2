@@ -19,11 +19,11 @@
     -   Click on the "Demon Hunter" card.
     -   **Verify**: Page title is "Demon Hunter".
     -   **Verify**: Theme colors are Purple (Primary) and Blue (Secondary).
-    -   **Verify**: Scenarios "The Awakening" and "The Subway Hunt" are listed.
+    -   **Verify**: Scenario "Seoul-Pop-Palooza" is listed.
 
 4.  **Scenario Rendering**
-    -   Click on "The Awakening".
-    -   **Verify**: Page title is "The Awakening".
+    -   Click on "Seoul-Pop-Palooza".
+    -   **Verify**: Page title is "Seoul-Pop-Palooza".
     -   **Verify**: Content renders correctly (text, images).
     -   **Verify**: Theme colors persist (Purple/Blue).
 
@@ -46,10 +46,8 @@
         -   Click "Next Rule".
         -   **Verify**: "Previous Rule" link points to "Core Rules" (Order 1).
     -   **Scenarios**:
-        -   Go to `/campaigns/demon-hunter/scenario-1`.
-        -   **Verify**: "Next Chapter" link points to "The Subway Hunt" (Order 2).
-        -   Click "Next Chapter".
-        -   **Verify**: "Previous Chapter" link points to "The Awakening" (Order 1).
+        -   (Note: Currently only one scenario exists for Demon Hunter, so pagination might not be visible unless a second scenario is added. If added:)
+        -   **Verify**: "Next/Previous Chapter" links appear and work correctly based on `order` field.
 
 8.  **Dynamic Landing Page & Character Theming**
     -   **Landing Page**:
@@ -63,3 +61,7 @@
         -   **Verify**: Character cards display Campaign Name in top-left styled tag.
         -   **Verify**: Level is displayed in top-right.
         -   **Verify**: Each card uses its campaign's specific theme colors.
+
+### Markdown Extensions
+- [ ] **Rolls Section**: Verify that `:::rolls` renders a collapsible details section.
+- [ ] **Rolls Styling**: Verify that the `:::rolls` section uses the campaign's primary color.
