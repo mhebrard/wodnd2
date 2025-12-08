@@ -1,7 +1,7 @@
 # Implementation Plan - WoDnD2
 
 ## Goal
-Create a modern, immersive web interface for the "World of Dungeons & Dragons 2" (WoDnD2) campaign setting. The application will serve as a hub for campaign stories, character profiles, and game rules, featuring a premium "Gothic Fantasy" aesthetic with dynamic theming for different campaigns.
+Create a modern, immersive web interface for the "World of Darkness & Dungeons & Dragons" (WoDnD²) campaign setting. The application will serve as a hub for campaign stories, character profiles, and game rules, featuring a premium "Gothic Fantasy" aesthetic with dynamic theming for different campaigns.
 
 ## Core Features
 
@@ -28,13 +28,14 @@ Create a modern, immersive web interface for the "World of Dungeons & Dragons 2"
     -   `content/rules/*.md`: Rulebook sections.
 -   **Renderer**: Custom Markdown renderer with support for:
     -   GitHub Flavored Markdown (tables, checklists).
-    -   Directives for custom components (e.g., `::character-stat-block`).
+    -   **Custom Directives**:
+        -   `:::rolls`: Collapsible section for game mechanics, styled with the campaign's primary color.
     -   Typography plugin for beautiful prose.
 
 ### 4. Campaigns Feature
 -   **Campaign List**: Grid view of available campaigns, styled with their specific theme colors.
 -   **Campaign Detail**: Overview of a campaign, listing its scenarios.
-    -   **UI Update**: Add watermark icon (`Scroll`) to scenario cards for visual consistency.
+    -   **Visuals**: Scenario cards feature a watermark icon (`Scroll`) for visual consistency.
 -   **Scenario View**: Immersive reading view for campaign chapters/scenarios, applying the campaign's unique color theme.
 
 ### 5. Characters Feature
@@ -100,28 +101,12 @@ Create a modern, immersive web interface for the "World of Dungeons & Dragons 2"
     -   Verify Landing Page cards display correct campaign colors and metadata.
     -   Verify Character cards on listing page match their campaign themes.
 
-### 3. Data Management
+### Data Management
 
 - **Content Source**: Markdown files in `content/campaigns`, `content/characters`, and `content/rules`.
 - **Utility** (`src/lib/markdown.ts`): Parses frontmatter and content.
 
-### 4. Deployment
+### Deployment
 
 - **Config**: `output: 'export'` in `next.config.ts`.
 - **Workflow**: GitHub Actions (`.github/workflows/deploy.yml`) for automated build and deploy.
-
-## Verification
-
-- [x] **Build**: `npm run build` passes successfully.
-- [x] **Lint**: `npm run lint` passes.
-- [x] **Theme**: Verified dark mode, typography, and color accents across all pages.
-- [x] **Responsiveness**: Verified layout on desktop and mobile.
-- [x] **Interactivity**: Verified collapsible sections and navigation links.
-- [x] **Rules Feature**: Verified rules listing and detail pages.
-- [x] **Dynamic Landing**: Verified latest content fetching and card theming.
-- [x] **Character Theming**: Verified campaign colors on character cards.
-
-## Future Improvements
-
-- Add more content (stories/characters).
-- Implement search functionality.

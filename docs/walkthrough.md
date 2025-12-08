@@ -85,6 +85,15 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 
 ![Scenario Card Watermark](assets/scenario_card_watermark_1764907432909.png)
 
+
+
+### 3. Markdown Extensions
+**Goal**: Custom markdown directives for enhanced storytelling.
+
+**Verification**:
+- **Rolls Directive**: `:::rolls` renders a collapsible details section styled with the campaign's primary color.
+- **Visual Check**:
+  ![Rolls Section](docs/assets/rolls-section.png)
 ![Character Card Tags Updated](assets/character_card_tags_updated_1764906035991.png)
 
 ### 4. Technical Setup
