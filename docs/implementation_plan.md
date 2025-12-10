@@ -42,7 +42,35 @@ Create a modern, immersive web interface for the "World of Darkness & Dungeons &
 -   **Character List**: Gallery of character cards with portraits and key details.
     -   **Dynamic Theming**: Character cards adopt the primary/secondary colors of their assigned campaign.
     -   **Card Layout**: Campaign name displayed in a styled tag (top-left), Level on the right.
--   **Character Detail**: Comprehensive view including stats, backstory, and equipment.
+-   **Character Detail (Sheet)**: Reconstituted "World of Darkness" style character sheet.
+    -   **Header**: 3-Column Layout.
+        -   Row 1: Name, Concept, Race.
+        -   Row 2: Player, Fellowship, Chronicle.
+    -   **Attributes**: 3x3 Grid (Mental/Physical/Social).
+        -   *Mental*: Intelligence, Wits, Resolve
+        -   *Physical*: Strength, Dexterity, Stamina
+        -   *Social*: Presence, Manipulation, Composure
+    -   **Body Layout**: 3-Column Grid.
+        -   **Column 1 (Skills)**: Full list from rules (Mental, Physical, Social).
+            -   *Features*: Support for optional specialties (e.g., "Brawl (Grappling)").
+            -   *Mental*: Academic, Craft, Investigation, Mechanisms, Medicine, Occult, Politics, Science.
+            -   *Physical*: Athletics, Brawl, Drive, Larceny, Shoot, Stealth, Survival, Weaponry.
+            -   *Social*: Animal Ken, Empathy, Expression, Intimidation, Persuasion, Socialize, Streetwise, Subterfuge.
+        -   **Columns 2 & 3 (Other Traits)**:
+            -   **Sub-Column 1**: 
+                -   **Merits**: Always display 10 fixed slots (fill empty with blank lines).
+                -   XP & Advantages.
+                -   **XP & Advantages**.
+            -   **Sub-Column 2**:
+                -   **Energies Section**: Header "Energies".
+                    -   **Health**: 12 Permanent Dots (Row 1) + 12 Temporary Squares (Row 2), aligned.
+                    -   **Willpower**: 10 Permanent Dots (Row 1) + 10 Temporary Squares (Row 2), aligned.
+                    -   **Mastery**: 10 Permanent Dots.
+                    -   **Mana**: 20 Temporary Squares (Grid 2x10).
+                -   **Paths**: Separator line below title (matching Advantages style).
+            -   **Bottom**: Equipment & Weapons.
+                -   *Alignment*: Consistent column widths between Weapons and Equipment tables.
+    -   **Visuals**: "Gothic Fantasy" styling.
 
 ### 6. Rules Feature
 -   **Rules Index**: List of rule categories.
