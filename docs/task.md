@@ -35,6 +35,24 @@
     - [x] Dynamic Theming (Campaign colors)
     - [x] Campaign Name Tags
   - [x] Character Detail Page
+  - [x] **Character Sheet Implementation**
+    - [x] **Data Structure**: Update `Character` and `OtherTraits` to include Advantages (Size, Speed, Defense, Armor, Initiative).
+    - [x] **Layout**: Implement 3-column structure (Skills | Traits/Advantages | Energy/Paths).
+    - [x] **Content**: Update `grommash.md` with full Skill list and Advantages.
+    - [x] **Components**:
+      - [x] `StatDots`: Reusable component for rendering 1-5 dot ratings.
+      - [x] `AttributeGrid`: 3x3 grid display for Attributes.
+      - [x] `SkillColumn`: List rendering for Skills (supports specialties).
+      - [x] `HealthBoxes`: Component for Health/Willpower/Mana tracking boxes.
+      - [x] `EquipmentTable`: Responsive table for weapons and gear.
+    - [x] **Features & Polish**:
+      - [x] **Merits**: Ensure 10 fixed lines are always displayed.
+      - [x] **Energies**: Encapsulate trackers (Health, Willpower, Mastery, Mana) in a dedicated section (Mana 2x10).
+      - [x] **XP**: Track "Spent / Total" values.
+      - [x] **Theming**:
+        - [x] Fetch campaign metadata to dynamic colors.
+        - [x] Apply primary color to filled dots; keep empty dots neutral.
+      - [x] **Detailed Polish**: Path separator, specific styling.
   - [x] Sample Content (Grommash)
 
 - [x] **Rules Module**

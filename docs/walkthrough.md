@@ -86,7 +86,21 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
   ![Rolls Section](docs/assets/rolls-section.png)
 ![Character Card Tags Updated](assets/character_card_tags_updated_1764906035991.png)
 
-### 4. Technical Setup
+### 4. Character Sheet (New)
+**Goal**: Reconstitute the "World of Darkness" style character sheet.
+
+**Verification**:
+- **Header**: Displays Name, Concept, Race, Player, Fellowship, Chronicle.
+- **Attributes**: 3x3 Grid (Mental/Physical/Social) with 1-5 dot ratings.
+- **Skills**: Categorized lists (Mental, Physical, Social) with dot ratings and specialties.
+- **Other Traits**: Merits, XP (Spent/Total), and Advantages.
+- **Energies**: Health, Willpower, Mastery, and Mana (2x10 grid).
+- **Theming**: Dots and accents use the campaign's primary color (`demon-hunter` = Purple).
+- **Equipment**: Tables for Weapons and Equipment.
+- **Visual Check**:
+  ![Character Sheet](assets/character_sheet_final_dots.png)
+
+### 5. Technical Setup
 
 - **Next.js App Router**: Modern routing architecture.
 - **Tailwind CSS**: Premium, responsive styling with a dark mode aesthetic.
