@@ -46,7 +46,10 @@ export interface OtherTraits {
     current: number;
     max: number;
   };
-  xp: number;
+  xp: {
+    spent: number;
+    earned: number;
+  };
   advantages: {
     size: number;
     speed: number;

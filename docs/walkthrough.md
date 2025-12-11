@@ -92,11 +92,13 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 **Verification**:
 - **Header**: Displays Name, Concept, Race, Player, Fellowship, Chronicle.
 - **Attributes**: 3x3 Grid (Mental/Physical/Social) with 1-5 dot ratings.
-- **Skills**: Categorized lists (Mental, Physical, Social) with dot ratings.
-- **Other Traits**: Merits, Health (boxes), Willpower (dots+boxes), Mastery/Mana.
+- **Skills**: Categorized lists (Mental, Physical, Social) with dot ratings and specialties.
+- **Other Traits**: Merits, XP (Spent/Total), and Advantages.
+- **Energies**: Health, Willpower, Mastery, and Mana (2x10 grid).
+- **Theming**: Dots and accents use the campaign's primary color (`demon-hunter` = Purple).
 - **Equipment**: Tables for Weapons and Equipment.
 - **Visual Check**:
-  ![Character Sheet](assets/character_sheet_refined.png)
+  ![Character Sheet](assets/character_sheet_final_dots.png)
 
 ### 5. Technical Setup
 

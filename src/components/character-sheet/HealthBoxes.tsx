@@ -11,10 +11,10 @@ const HealthBoxes = ({ current, max, label, type = 'health', boxesCount, dotsCou
 
     // Configurations
     const config = {
-        health: { dots: 12, boxes: 12, dotColor: "bg-slate-200 border-slate-500", boxColor: "bg-slate-500/50 border-slate-500" },
-        willpower: { dots: 10, boxes: 10, dotColor: "bg-slate-200 border-slate-500", boxColor: "bg-slate-500/50 border-slate-500" },
-        mastery: { dots: 10, boxes: 0, dotColor: "bg-slate-200 border-slate-500", boxColor: "" },
-        mana: { dots: 0, boxes: 20, dotColor: "", boxColor: "bg-slate-500/50 border-slate-500" },
+        health: { dots: 12, boxes: 12, dotColor: "bg-primary border-primary", boxColor: "bg-secondary/50 border-primary" },
+        willpower: { dots: 10, boxes: 10, dotColor: "bg-primary border-primary", boxColor: "bg-secondary/50 border-primary" },
+        mastery: { dots: 10, boxes: 0, dotColor: "bg-primary border-primary", boxColor: "" },
+        mana: { dots: 0, boxes: 20, dotColor: "", boxColor: "bg-secondary/50 border-primary" },
     };
     // border-[color:var(--color-primary)]/50
 
@@ -23,39 +23,43 @@ const HealthBoxes = ({ current, max, label, type = 'health', boxesCount, dotsCou
     const totalBoxes = boxesCount ?? settings.boxes;
 
     return (
-        <div className="flex flex-col items-center gap-1">
+        <div className="flex flex-col items-center gap-1" >
             {label && <h4 className="font-cinzel font-bold text-lg">{label}</h4>}
 
             {/* Dots Row (Permanent) */}
-            {totalDots > 0 && (
-                <div className="flex gap-1 justify-center">
-                    {Array.from({ length: totalDots }).map((_, i) => {
-                        const isFilled = i < max;
-                        return (
-                            <div
-                                key={`dot-${i}`}
-                                className={`w-4 h-4 rounded-full border border-slate-600 ${isFilled ? settings.dotColor : "bg-transparent"}`}
-                            />
-                        );
-                    })}
-                </div>
-            )}
+            {
+                totalDots > 0 && (
+                    <div className="flex gap-1 justify-center">
+                        {Array.from({ length: totalDots }).map((_, i) => {
+                            const isFilled = i < max;
+                            return (
+                                <div
+                                    key={`dot-${i}`}
+                                    className={`w-4 h-4 rounded-full border border-slate-200 ${isFilled ? settings.dotColor : "bg-transparent"}`}
+                                />
+                            );
+                        })}
+                    </div>
+                )
+            }
 
             {/* Boxes Row (Temporary) */}
-            {totalBoxes > 0 && (
-                <div className={`gap-1 justify-center ${totalBoxes >= 20 ? 'grid grid-cols-10' : 'flex flex-wrap'}`}>
-                    {Array.from({ length: totalBoxes }).map((_, i) => {
-                        const isFilled = i < current;
-                        return (
-                            <div
-                                key={`box-${i}`}
-                                className={`w-4 h-4 rounded-sm border border-slate-600 ${isFilled ? settings.boxColor : "bg-transparent"}`}
-                            />
-                        );
-                    })}
-                </div>
-            )}
-        </div>
+            {
+                totalBoxes > 0 && (
+                    <div className={`gap-1 justify-center ${totalBoxes >= 20 ? 'grid grid-cols-10' : 'flex flex-wrap'}`}>
+                        {Array.from({ length: totalBoxes }).map((_, i) => {
+                            const isFilled = i < current;
+                            return (
+                                <div
+                                    key={`box-${i}`}
+                                    className={`w-4 h-4 rounded-sm border border-slate-200 ${isFilled ? settings.boxColor : "bg-transparent"}`}
+                                />
+                            );
+                        })}
+                    </div>
+                )
+            }
+        </div >
     );
 };
 

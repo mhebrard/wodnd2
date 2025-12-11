@@ -43,6 +43,9 @@ Create a modern, immersive web interface for the "World of Darkness & Dungeons &
     -   **Dynamic Theming**: Character cards adopt the primary/secondary colors of their assigned campaign.
     -   **Card Layout**: Campaign name displayed in a styled tag (top-left), Level on the right.
 -   **Character Detail (Sheet)**: Reconstituted "World of Darkness" style character sheet.
+    -   **Theming**: Fetches parent campaign metadata to apply specific primary/secondary colors variables.
+        -   *StatDots*: Filled dots use Campaign Primary color; empty dots use default border.
+        -   *HealthBoxes*: Dots use Campaign Primary; Boxes use Campaign dimmed Secondary.
     -   **Header**: 3-Column Layout.
         -   Row 1: Name, Concept, Race.
         -   Row 2: Player, Fellowship, Chronicle.
@@ -59,8 +62,8 @@ Create a modern, immersive web interface for the "World of Darkness & Dungeons &
         -   **Columns 2 & 3 (Other Traits)**:
             -   **Sub-Column 1**: 
                 -   **Merits**: Always display 10 fixed slots (fill empty with blank lines).
-                -   XP & Advantages.
-                -   **XP & Advantages**.
+                -   **XP**: Display "Spent / Total" values.
+                -   **Advantages**: Size, Speed, Defense, Armor, Initiative.
             -   **Sub-Column 2**:
                 -   **Energies Section**: Header "Energies".
                     -   **Health**: 12 Permanent Dots (Row 1) + 12 Temporary Squares (Row 2), aligned.

@@ -1,4 +1,4 @@
-import { getAllPosts, getPostBySlug } from "@/lib/markdown";
+import { getAllPosts, getPostBySlug, getCampaignBySlug } from "@/lib/markdown";
 import MarkdownRenderer from "@/components/MarkdownRenderer";
 import { notFound } from "next/navigation";
 import { Character } from "@/lib/types";
@@ -30,8 +30,29 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
 
     const character = postData as unknown as Character;
 
+    // Fetch campaign data for theming
+    let primaryColor = "#e2e8f0"; // Default slate-200
+    let secondaryColor = "#64748b"; // Default slate-500
+
+    if (character.campaign) {
+        try {
+            const campaignData = getCampaignBySlug(character.campaign, ["primaryColor", "secondaryColor"]);
+            if (campaignData.primaryColor) primaryColor = campaignData.primaryColor;
+            if (campaignData.secondaryColor) secondaryColor = campaignData.secondaryColor;
+        } catch (e) {
+            console.error(`Failed to load campaign ${character.campaign} for character theming:`, e);
+        }
+    }
+
     return (
-        <div className="max-w-6xl mx-auto space-y-8">
+        <div
+            className="max-w-6xl mx-auto space-y-8"
+            style={{
+                // @ts-expect-error - Setting custom CSS variables
+                "--color-primary": primaryColor,
+                "--color-secondary": secondaryColor,
+            }}
+        >
             {/* Sheet Header */}
             <div className="bg-surface rounded-xl border border-slate-800 p-6 relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-8 opacity-5">
@@ -43,7 +64,7 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
                     {/* Row 1 */}
                     <div className="flex justify-between border-b border-slate-800 pb-1">
                         <span className="font-bold text-slate-500">Name:</span>
-                        <span className="text-xl font-bold">{character.name}</span>
+                        <span className="text-xl font-bold text-primary">{character.name}</span>
                     </div>
                     <div className="flex justify-between border-b border-slate-800 pb-1">
                         <span className="font-bold text-slate-500">Concept:</span>
@@ -208,10 +229,12 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
                                     )}
 
                                     {/* XP */}
-                                    {character.other_traits?.xp !== undefined && (
+                                    {character.other_traits?.xp && (
                                         <div className="flex justify-between items-center border p-2 rounded border-slate-700 bg-slate-950/50">
                                             <span className="font-cinzel font-bold text-sm">Experience</span>
-                                            <span className="font-mono font-bold text-primary">{character.other_traits.xp} XP</span>
+                                            <span className="font-mono font-bold text-primary text-sm">
+                                                <span className="text-slate-400">Spent:</span> {character.other_traits.xp.spent} / <span className="text-slate-400">Total:</span> {character.other_traits.xp.earned}
+                                            </span>
                                         </div>
                                     )}
                                 </div>

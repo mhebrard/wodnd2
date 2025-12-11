@@ -5,7 +5,7 @@ race: "Orc"
 player: "Mike"
 fellowship: "The Iron Horde"
 chronicle: "The Lost Mines"
-campaign: "The Lost Mines"
+campaign: "the-lost-mines"
 date: "2023-10-01"
 attributes:
   mental:
@@ -94,7 +94,9 @@ other_traits:
   mana:
     current: 10
     max: 20
-  xp: 15
+  xp:
+    spent: 10
+    earned: 15
   advantages:
     size: 6
     speed: 12
@@ -133,3 +135,5 @@ equipment:
 # Grommash
 
 Grommash is a fierce warrior...
+
+Sample character to demonstrate the system

@@ -36,26 +36,23 @@
     - [x] Campaign Name Tags
   - [x] Character Detail Page
   - [x] **Character Sheet Implementation**
-    - [x] **Data Structure**: Update `Character` interface and frontmatter (Attributes, Skills, Traits).
+    - [x] **Data Structure**: Update `Character` and `OtherTraits` to include Advantages (Size, Speed, Defense, Armor, Initiative).
+    - [x] **Layout**: Implement 3-column structure (Skills | Traits/Advantages | Energy/Paths).
+    - [x] **Content**: Update `grommash.md` with full Skill list and Advantages.
     - [x] **Components**:
       - [x] `StatDots`: Reusable component for rendering 1-5 dot ratings.
-      - [x] `AttributeGrid`: 3x3 grid display.
-      - [x] `SkillColumn`: List rendering for Mental/Physical/Social skills.
-      - [x] `HealthBoxes`: Component for Health/Willpower tracking boxes.
+      - [x] `AttributeGrid`: 3x3 grid display for Attributes.
+      - [x] `SkillColumn`: List rendering for Skills (supports specialties).
+      - [x] `HealthBoxes`: Component for Health/Willpower/Mana tracking boxes.
       - [x] `EquipmentTable`: Responsive table for weapons and gear.
-    - [x] **Page Layout**: Assemble the sheet using CSS Grid/Flexbox to match the reference layout.
-  - [x] Refactor Character Sheet
-    - [x] **Type Definitions**: Update `Character` and `OtherTraits` to include Advantages (Size, Speed, Defense, Armor, Initiative).
-    - [x] **Content**: Update `grommash.md` with full Skill list and Advantages.
-    - [x] **Specialties**: Implement optional skill specialties display.
-    - [x] **Layout**: Implement 3-column structure (Skills | Traits/Advantages | Energy/Paths).
-    - [x] **Components**: Update `EquipmentTable` to fit new layout.
-  - [x] **Refine Character Sheet Layout**
-    - [x] **Merits**: Ensure 10 fixed lines are always displayed.
-    - [x] **Trackers (Health/Willpower/etc)**: Update `HealthBoxes` to support "Dots over Boxes" alignment and specific layouts (12/12, 10/10, 20 boxes).
-    - [x] **Equipment**: Align columns between Weapons and Equipment tables.
-    - [x] **Energies**: Encapsulate trackers in section, force 2x10 grid for Mana.
-    - [x] **Detailed Polish**: Path separator, specific styling.
+    - [x] **Features & Polish**:
+      - [x] **Merits**: Ensure 10 fixed lines are always displayed.
+      - [x] **Energies**: Encapsulate trackers (Health, Willpower, Mastery, Mana) in a dedicated section (Mana 2x10).
+      - [x] **XP**: Track "Spent / Total" values.
+      - [x] **Theming**:
+        - [x] Fetch campaign metadata to dynamic colors.
+        - [x] Apply primary color to filled dots; keep empty dots neutral.
+      - [x] **Detailed Polish**: Path separator, specific styling.
   - [x] Sample Content (Grommash)
 
 - [x] **Rules Module**
