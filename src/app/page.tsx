@@ -113,9 +113,9 @@ export default function Home() {
                   {latestCharacter.name}
                 </h2>
                 <p className="text-text-muted mb-2 font-sans">
-                  <span className="text-slate-400">Class:</span> {latestCharacter.class} <span className="mx-2">•</span> <span className="text-slate-400">Race:</span> {latestCharacter.race}
+                  <span className="text-slate-400">Concept:</span> {latestCharacter.concept} <span className="mx-2">•</span> <span className="text-slate-400">Race:</span> {latestCharacter.race}
                 </p>
-                <div className="flex items-center text-[color:var(--color-primary)] font-medium font-[family-name:var(--font-cinzel)] group-hover:underline mt-4">
+                <div className="flex items-center text-[color:var(--color-primary)] font-medium font-[family-name:var(--font-cinzel)] mt-4">
                   View Profile &rarr;
                 </div>
               </div>

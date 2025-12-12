@@ -3,7 +3,7 @@ import { getAllPosts, getAllCampaigns } from "@/lib/markdown";
 import { Users, Shield, Sword, Scroll } from "lucide-react";
 
 export default function CharactersPage() {
-    const characters = getAllPosts(["name", "class", "race", "level", "campaign", "slug"], "characters");
+    const characters = getAllPosts(["name", "class", "race", "level", "campaign", "slug", "concept"], "characters");
     const campaigns = getAllCampaigns(["title", "slug", "primaryColor", "secondaryColor"]);
 
     // Create a map for easy lookup: Slug -> Colors & Title
@@ -57,7 +57,7 @@ export default function CharactersPage() {
 
                                 <div className="relative z-10">
                                     <div className="flex items-center justify-between mb-4">
-                                        <span className="px-2 py-1 bg-surface-hover rounded text-xs text-[color:var(--color-primary)] font-bold uppercase tracking-wider border border-[color:var(--color-primary)]">
+                                        <span className="px-2 py-1 bg-surface-hover rounded text-xs text-[color:var(--color-secondary)] font-bold uppercase tracking-wider border border-[color:var(--color-secondary)]">
                                             {theme?.title || char.campaign}
                                         </span>
                                         <span className="text-xs text-slate-500 font-mono">Lvl {char.level}</span>
@@ -68,16 +68,9 @@ export default function CharactersPage() {
                                     </h2>
 
                                     <div className="flex items-center gap-2 text-sm text-text-muted mb-4 font-sans">
-                                        <span>{char.race}</span>
+                                        <span>{char.concept}</span>
                                         <span>•</span>
-                                        <span>{char.class}</span>
-                                    </div>
-
-                                    <div className="flex gap-2 mt-4">
-                                        <div className="flex items-center gap-1 text-xs text-slate-500 bg-slate-950/50 px-2 py-1 rounded group-hover:text-[color:var(--color-secondary)] transition-colors">
-                                            <Shield className="h-3 w-3" />
-                                            <span>View Sheet</span>
-                                        </div>
+                                        <span>{char.race}</span>
                                     </div>
                                 </div>
                             </div>

@@ -35,7 +35,7 @@ export default async function CampaignPage({ params }: { params: Promise<{ slug:
                         { label: campaign.title }
                     ]}
                 />
-                <h1 className="text-4xl font-bold text-[color:var(--color-primary)] mb-4 font-[family-name:var(--font-cinzel)]">
+                <h1 className="text-4xl font-bold text-[color:var(--color-secondary)] mb-4 font-[family-name:var(--font-cinzel)]">
                     {campaign.title}
                 </h1>
                 <p className="text-lg text-text-muted font-sans max-w-3xl">

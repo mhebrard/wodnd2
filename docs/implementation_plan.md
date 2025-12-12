@@ -41,7 +41,11 @@ Create a modern, immersive web interface for the "World of Darkness & Dungeons &
 ### 5. Characters Feature
 -   **Character List**: Gallery of character cards with portraits and key details.
     -   **Dynamic Theming**: Character cards adopt the primary/secondary colors of their assigned campaign.
-    -   **Card Layout**: Campaign name displayed in a styled tag (top-left), Level on the right.
+    -   **Card Layout**: 
+        -   Campaign Name: Secondary Color.
+        -   Name/Watermark: Primary Color.
+        -   Content: Display Race & Concept.
+        -   *No Action Button*.
 -   **Character Detail (Sheet)**: Reconstituted "World of Darkness" style character sheet.
     -   **Theming**: Fetches parent campaign metadata to apply specific primary/secondary colors variables.
         -   *StatDots*: Filled dots use Campaign Primary color; empty dots use default border.

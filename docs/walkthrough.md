@@ -69,6 +69,7 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
     - "New Challenger" card displays the most recent character.
     - Cards link correctly to their respective detail pages.
     - **Campaign Names**: Cards display the specific campaign name (e.g., "Demon Hunter", "The Lost Mines").
+    - **Character Card**: Displays Name, Concept, Race.
 
 ### Verification Media
 ![Dynamic Landing Page](assets/home_page_verify_1764904711947.png)
