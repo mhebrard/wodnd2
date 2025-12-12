@@ -75,13 +75,13 @@ export default function Home() {
                 </span>
                 <span className="text-xs text-slate-500 font-mono">{latestScenario.date}</span>
               </div>
-              <h2 className="text-3xl font-bold text-[color:var(--color-primary)] mb-2 group-hover:text-[color:var(--color-primary)] transition-colors font-[family-name:var(--font-cinzel)]">
+              <h2 className="text-3xl font-bold text-text-main mb-2 group-hover:text-[color:var(--color-primary)] transition-colors font-[family-name:var(--font-cinzel)]">
                 {latestScenario.title}
               </h2>
               <p className="text-text-muted mb-6 font-sans line-clamp-3">
                 {latestScenario.description}
               </p>
-              <div className="flex items-center text-[color:var(--color-primary)] font-medium font-[family-name:var(--font-cinzel)] group-hover:underline">
+              <div className="flex items-center text-[color:var(--color-primary)] font-medium font-[family-name:var(--font-cinzel)]">
                 Read Chapter &rarr;
               </div>
             </div>
@@ -109,7 +109,7 @@ export default function Home() {
                   </span>
                   <span className="text-xs text-slate-500 font-mono">{latestCharacter.date}</span>
                 </div>
-                <h2 className="text-3xl font-bold text-[color:var(--color-primary)] mb-2 group-hover:text-[color:var(--color-primary)] transition-colors font-[family-name:var(--font-cinzel)]">
+                <h2 className="text-3xl font-bold text-text-main mb-2 group-hover:text-[color:var(--color-primary)] transition-colors font-[family-name:var(--font-cinzel)]">
                   {latestCharacter.name}
                 </h2>
                 <p className="text-text-muted mb-2 font-sans">
