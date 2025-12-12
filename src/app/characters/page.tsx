@@ -6,16 +6,17 @@ export default function CharactersPage() {
     const characters = getAllPosts(["name", "class", "race", "level", "campaign", "slug"], "characters");
     const campaigns = getAllCampaigns(["title", "slug", "primaryColor", "secondaryColor"]);
 
-    // Create a map for easy lookup: Title -> Colors
-    const campaignColorMap = campaigns.reduce((acc, campaign) => {
-        if (campaign.title) {
-            acc[campaign.title] = {
+    // Create a map for easy lookup: Slug -> Colors & Title
+    const campaignDataMap = campaigns.reduce((acc, campaign) => {
+        if (campaign.slug) {
+            acc[campaign.slug] = {
+                title: campaign.title,
                 primary: campaign.primaryColor,
                 secondary: campaign.secondaryColor
             };
         }
         return acc;
-    }, {} as Record<string, { primary: string, secondary: string }>);
+    }, {} as Record<string, { title: string, primary: string, secondary: string }>);
 
     return (
         <div className="space-y-8">
@@ -26,7 +27,15 @@ export default function CharactersPage() {
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {characters.map((char) => {
-                    const theme = campaignColorMap[char.campaign];
+                    // Try to find campaign by slug (assuming char.campaign is now a slug)
+                    // If not found, try to find by title (legacy support)
+                    let theme = campaignDataMap[char.campaign];
+                    if (!theme) {
+                        // Fallback: Check if char.campaign is a title
+                        const foundSlug = Object.keys(campaignDataMap).find(slug => campaignDataMap[slug].title === char.campaign);
+                        if (foundSlug) theme = campaignDataMap[foundSlug];
+                    }
+
                     const style = theme ? {
                         '--color-primary': theme.primary,
                         '--color-secondary': theme.secondary,
@@ -49,7 +58,7 @@ export default function CharactersPage() {
                                 <div className="relative z-10">
                                     <div className="flex items-center justify-between mb-4">
                                         <span className="px-2 py-1 bg-surface-hover rounded text-xs text-[color:var(--color-primary)] font-bold uppercase tracking-wider border border-[color:var(--color-primary)]">
-                                            {char.campaign}
+                                            {theme?.title || char.campaign}
                                         </span>
                                         <span className="text-xs text-slate-500 font-mono">Lvl {char.level}</span>
                                     </div>
