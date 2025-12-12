@@ -48,7 +48,8 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
     - Scenarios render correctly with images.
     - Markdown content is styled with the active theme.
 - [x] **UI Polish**:
-    - Scenario cards feature a watermark icon (`Scroll`) for visual consistency.
+    -   Scenario cards feature a watermark icon (`Scroll`) in Primary Color.
+    -   Campaign Details headers and breadcrumbs use Secondary Color highlighting.
 
 ### Navigation
 - [x] **Breadcrumbs**:
@@ -64,11 +65,14 @@ I have successfully created the RPG Story Web App using Next.js and Tailwind CSS
 ### Dynamic Landing Page
 - [x] **Hero Section**: Title uses neutral gray tones.
 - [x] **Dynamic Theme**: Cards adopt the colors of their respective campaigns.
+    -   *Title*: White by default, transitions to Primary color on hover.
+    -   *Action*: No underline on hover.
 - [x] **Latest Updates**:
     - "Latest Scenario" card displays the most recent scenario with correct metadata.
     - "New Challenger" card displays the most recent character.
     - Cards link correctly to their respective detail pages.
     - **Campaign Names**: Cards display the specific campaign name (e.g., "Demon Hunter", "The Lost Mines").
+    - **Character Card**: Displays Name, Concept, Race.
 
 ### Verification Media
 ![Dynamic Landing Page](assets/home_page_verify_1764904711947.png)

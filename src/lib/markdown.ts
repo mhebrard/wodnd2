@@ -227,7 +227,7 @@ export function getLatestScenario() {
 }
 
 export function getLatestCharacter() {
-    const characters = getAllPosts(["name", "class", "level", "race", "campaign", "date", "slug"], "characters");
+    const characters = getAllPosts(["name", "class", "level", "race", "campaign", "date", "slug", "concept"], "characters");
     // Sort by date descending (already done in getAllPosts but good to be explicit if logic changes)
     // getAllPosts sorts by order then date. Characters might not have order.
     // Let's re-sort strictly by date for "latest"

@@ -29,13 +29,15 @@ export default async function CampaignPage({ params }: { params: Promise<{ slug:
             } as React.CSSProperties}
         >
             <div className="border-b border-slate-800 pb-4">
-                <Breadcrumbs
-                    items={[
-                        { label: "Campaigns", href: "/campaigns" },
-                        { label: campaign.title }
-                    ]}
-                />
-                <h1 className="text-4xl font-bold text-[color:var(--color-primary)] mb-4 font-[family-name:var(--font-cinzel)]">
+                <div style={{ '--color-primary': campaign.secondaryColor } as React.CSSProperties}>
+                    <Breadcrumbs
+                        items={[
+                            { label: "Campaigns", href: "/campaigns" },
+                            { label: campaign.title }
+                        ]}
+                    />
+                </div>
+                <h1 className="text-4xl font-bold text-[color:var(--color-secondary)] mb-4 font-[family-name:var(--font-cinzel)]">
                     {campaign.title}
                 </h1>
                 <p className="text-lg text-text-muted font-sans max-w-3xl">

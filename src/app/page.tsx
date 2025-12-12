@@ -75,13 +75,13 @@ export default function Home() {
                 </span>
                 <span className="text-xs text-slate-500 font-mono">{latestScenario.date}</span>
               </div>
-              <h2 className="text-3xl font-bold text-[color:var(--color-primary)] mb-2 group-hover:text-[color:var(--color-primary)] transition-colors font-[family-name:var(--font-cinzel)]">
+              <h2 className="text-3xl font-bold text-text-main mb-2 group-hover:text-[color:var(--color-primary)] transition-colors font-[family-name:var(--font-cinzel)]">
                 {latestScenario.title}
               </h2>
               <p className="text-text-muted mb-6 font-sans line-clamp-3">
                 {latestScenario.description}
               </p>
-              <div className="flex items-center text-[color:var(--color-primary)] font-medium font-[family-name:var(--font-cinzel)] group-hover:underline">
+              <div className="flex items-center text-[color:var(--color-primary)] font-medium font-[family-name:var(--font-cinzel)]">
                 Read Chapter &rarr;
               </div>
             </div>
@@ -99,23 +99,23 @@ export default function Home() {
         {
           latestCharacter ? (
             <Link href={`/characters/${latestCharacter.slug}`} className="block group">
-              <div className="bg-surface p-6 rounded-xl border border-slate-800 hover:border-[color:var(--color-secondary)]/50 transition-all hover:shadow-lg hover:shadow-[color:var(--color-secondary)]/10 h-full relative overflow-hidden" style={characterTheme}>
+              <div className="bg-surface p-6 rounded-xl border border-slate-800 hover:border-[color:var(--color-primary)]/50 transition-all hover:shadow-lg hover:shadow-[color:var(--color-primary)]/10 h-full relative overflow-hidden" style={characterTheme}>
                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                  <Shield className="w-24 h-24 text-[color:var(--color-secondary)]" />
+                  <Shield className="w-24 h-24 text-[color:var(--color-primary)]" />
                 </div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[color:var(--color-primary)] border border-[color:var(--color-primary)] px-2 py-1 rounded">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[color:var(--color-secondary)] border border-[color:var(--color-secondary)] px-2 py-1 rounded">
                     {latestCharacter.campaign || "New Challenger"}
                   </span>
                   <span className="text-xs text-slate-500 font-mono">{latestCharacter.date}</span>
                 </div>
-                <h2 className="text-3xl font-bold text-[color:var(--color-secondary)] mb-2 group-hover:text-[color:var(--color-secondary)] transition-colors font-[family-name:var(--font-cinzel)]">
+                <h2 className="text-3xl font-bold text-text-main mb-2 group-hover:text-[color:var(--color-primary)] transition-colors font-[family-name:var(--font-cinzel)]">
                   {latestCharacter.name}
                 </h2>
                 <p className="text-text-muted mb-2 font-sans">
-                  <span className="text-slate-400">Class:</span> {latestCharacter.class} <span className="mx-2">•</span> <span className="text-slate-400">Race:</span> {latestCharacter.race}
+                  <span className="text-slate-400">Concept:</span> {latestCharacter.concept} <span className="mx-2">•</span> <span className="text-slate-400">Race:</span> {latestCharacter.race}
                 </p>
-                <div className="flex items-center text-[color:var(--color-secondary)] font-medium font-[family-name:var(--font-cinzel)] group-hover:underline mt-4">
+                <div className="flex items-center text-[color:var(--color-primary)] font-medium font-[family-name:var(--font-cinzel)] mt-4">
                   View Profile &rarr;
                 </div>
               </div>
