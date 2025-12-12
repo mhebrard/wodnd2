@@ -125,7 +125,7 @@ weapons:
 equipment:
   - name: "Leather Armor"
     armor: "2"
-    size: "2"
+    structure: "2"
     defense: "0"
     special: "-"
   - name: "..."

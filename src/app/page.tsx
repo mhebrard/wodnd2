@@ -132,6 +132,7 @@ export default function Home() {
       </section >
 
       <div className="flex justify-center items-center gap-2 pt-8 border-t border-slate-800/50 text-slate-500 font-sans text-sm">
+        <Dices className="w-4 h-4" />
         <span>Forged in the shadows by</span>
         <a href="https://github.com/mhebrard" target="_blank" rel="noopener noreferrer" className="text-[color:var(--color-primary)] hover:text-[color:var(--color-secondary)] transition-colors font-medium">mhebrard</a>
         <span>and</span>

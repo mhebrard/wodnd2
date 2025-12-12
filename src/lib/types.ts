@@ -79,7 +79,7 @@ export interface Weapon {
 export interface Equipment {
   name: string;
   armor: string;
-  size: string;
+  structure: string;
   defense: string;
   special: string;
 }
