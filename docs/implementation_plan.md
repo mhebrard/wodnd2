@@ -45,7 +45,9 @@ Create a modern, immersive web interface for the "World of Darkness & Dungeons &
     -   **Dynamic Theming**: Character cards adopt the primary/secondary colors of their assigned campaign.
     -   **Card Layout**: 
         -   Campaign Name: Secondary Color (Tag).
+        -   Campaign Name: Secondary Color (Tag).
         -   Name/Watermark: Primary Color.
+        -   **Watermark Icon**: Determined by `class` property (e.g., Warrior=Sword, Mage=Scroll).
         -   Content: Display Race & Concept.
         -   *No Action Button*.
 -   **Character Detail (Sheet)**: Reconstituted "World of Darkness" style character sheet.

@@ -89,6 +89,7 @@ export interface Character {
   name: string;
   concept: string;
   race: string;
+  class: string;
   player: string;
   fellowship: string;
   chronicle: string;

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAllPosts, getAllCampaigns } from "@/lib/markdown";
-import { Users, Shield, Sword, Scroll } from "lucide-react";
+import { Shield, Sword, Scroll } from "lucide-react";
+import getClassIcon from "@/components/ClassIcon";
 
 export default function CharactersPage() {
     const characters = getAllPosts(["name", "class", "race", "level", "campaign", "slug", "concept"], "characters");
@@ -52,7 +53,10 @@ export default function CharactersPage() {
                                 style={style}
                             >
                                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                                    <Users className="h-24 w-24 text-[color:var(--color-primary)]" />
+                                    {(() => {
+                                        const Icon = getClassIcon(char.class);
+                                        return <Icon className="h-24 w-24 text-[color:var(--color-primary)]" />;
+                                    })()}
                                 </div>
 
                                 <div className="relative z-10">

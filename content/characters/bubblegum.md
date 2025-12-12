@@ -2,6 +2,7 @@
 name: "Bubblegum"
 concept: "Rookie Hunter Idol"
 race: "Human"
+class: "Bard"
 player: "Maely"
 fellowship: ""
 chronicle: "Demon Hunter"

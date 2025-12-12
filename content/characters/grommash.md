@@ -2,6 +2,7 @@
 name: "Grommash"
 concept: "Fierce Warrior"
 race: "Orc"
+class: "Barbarian"
 player: "Mike"
 fellowship: "The Iron Horde"
 chronicle: "The Lost Mines"
