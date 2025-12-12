@@ -33,16 +33,18 @@ Create a modern, immersive web interface for the "World of Darkness & Dungeons &
     -   Typography plugin for beautiful prose.
 
 ### 4. Campaigns Feature
--   **Campaign List**: Grid view of available campaigns, styled with their specific theme colors.
+-   **Campaign List**: Grid view of available campaigns.
+    -   **Theming**: Uses **Secondary Color** for icons, watermarks, titles, and hover highlights.
 -   **Campaign Detail**: Overview of a campaign, listing its scenarios.
-    -   **Visuals**: Scenario cards feature a watermark icon (`Scroll`) for visual consistency.
+    -   **Theming**: Title and Breadcrumbs use **Secondary Color**.
+    -   **Visuals**: Scenario cards use **Primary Color** highlights.
 -   **Scenario View**: Immersive reading view for campaign chapters/scenarios, applying the campaign's unique color theme.
 
 ### 5. Characters Feature
 -   **Character List**: Gallery of character cards with portraits and key details.
     -   **Dynamic Theming**: Character cards adopt the primary/secondary colors of their assigned campaign.
     -   **Card Layout**: 
-        -   Campaign Name: Secondary Color.
+        -   Campaign Name: Secondary Color (Tag).
         -   Name/Watermark: Primary Color.
         -   Content: Display Race & Concept.
         -   *No Action Button*.
@@ -91,6 +93,7 @@ Create a modern, immersive web interface for the "World of Darkness & Dungeons &
 -   **Content**:
     -   **Hero**: Welcoming title and introduction.
     -   **Latest Updates**: Automatically displays the most recently released Scenario and Character.
+    -   **Style**: Text white by default, colored on hover. No action text underline.
 -   **Data Fetching**:
     -   Utilities to aggregate scenarios from all campaigns and identify the latest content based on date.
 
