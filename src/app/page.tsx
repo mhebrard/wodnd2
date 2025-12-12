@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { BookOpen, Users, Scroll, Shield, Dices } from "lucide-react";
+import { BookOpen, Scroll, Dices } from "lucide-react";
 import { getLatestScenario, getLatestCharacter, getCampaignBySlug } from "@/lib/markdown";
+import getClassIcon from "@/components/ClassIcon";
 
 export default function Home() {
   const latestScenario = getLatestScenario();
@@ -101,7 +102,16 @@ export default function Home() {
             <Link href={`/characters/${latestCharacter.slug}`} className="block group">
               <div className="bg-surface p-6 rounded-xl border border-slate-800 hover:border-[color:var(--color-primary)]/50 transition-all hover:shadow-lg hover:shadow-[color:var(--color-primary)]/10 h-full relative overflow-hidden" style={characterTheme}>
                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                  <Shield className="w-24 h-24 text-[color:var(--color-primary)]" />
+                  {latestCharacter.class ? (() => {
+                    const Icon = getClassIcon(latestCharacter.class);
+                    return <Icon className="w-24 h-24 text-[color:var(--color-primary)]" />;
+                  })() : (
+                    // Fallback if no class
+                    // Although getClassIcon handles it, let's just call it inline safer
+                    <div className="w-24 h-24 text-[color:var(--color-primary)]">
+                      {(() => { const Icon = getClassIcon(latestCharacter.class); return <Icon className="w-full h-full" />; })()}
+                    </div>
+                  )}
                 </div>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-xs font-bold uppercase tracking-wider text-[color:var(--color-secondary)] border border-[color:var(--color-secondary)] px-2 py-1 rounded">
@@ -132,6 +142,7 @@ export default function Home() {
       </section >
 
       <div className="flex justify-center items-center gap-2 pt-8 border-t border-slate-800/50 text-slate-500 font-sans text-sm">
+        <Dices className="w-4 h-4" />
         <span>Forged in the shadows by</span>
         <a href="https://github.com/mhebrard" target="_blank" rel="noopener noreferrer" className="text-[color:var(--color-primary)] hover:text-[color:var(--color-secondary)] transition-colors font-medium">mhebrard</a>
         <span>and</span>

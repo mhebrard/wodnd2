@@ -2,6 +2,7 @@
 name: "Grommash"
 concept: "Fierce Warrior"
 race: "Orc"
+class: "Barbarian"
 player: "Mike"
 fellowship: "The Iron Horde"
 chronicle: "The Lost Mines"
@@ -125,7 +126,7 @@ weapons:
 equipment:
   - name: "Leather Armor"
     armor: "2"
-    size: "2"
+    structure: "2"
     defense: "0"
     special: "-"
   - name: "..."

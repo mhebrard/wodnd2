@@ -79,7 +79,7 @@ export interface Weapon {
 export interface Equipment {
   name: string;
   armor: string;
-  size: string;
+  structure: string;
   defense: string;
   special: string;
 }
@@ -89,6 +89,7 @@ export interface Character {
   name: string;
   concept: string;
   race: string;
+  class: string;
   player: string;
   fellowship: string;
   chronicle: string;

@@ -3,6 +3,7 @@ import MarkdownRenderer from "@/components/MarkdownRenderer";
 import { notFound } from "next/navigation";
 import { Character } from "@/lib/types";
 import { Shield, Scroll } from "lucide-react";
+import getClassIcon from "@/components/ClassIcon";
 import StatDots from "@/components/character-sheet/StatDots";
 import AttributeGrid from "@/components/character-sheet/AttributeGrid";
 import SkillColumn from "@/components/character-sheet/SkillColumn";
@@ -20,7 +21,7 @@ export async function generateStaticParams() {
 export default async function CharacterPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
     const postData = getPostBySlug(id, [
-        "name", "concept", "race", "player", "fellowship", "chronicle", "campaign",
+        "name", "concept", "race", "class", "player", "fellowship", "chronicle", "campaign",
         "attributes", "skills", "other_traits", "weapons", "equipment", "content"
     ], "characters");
 
@@ -56,7 +57,10 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
             {/* Sheet Header */}
             <div className="bg-surface rounded-xl border border-slate-800 p-6 relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-8 opacity-5">
-                    <Shield className="h-64 w-64 text-primary" />
+                    {(() => {
+                        const Icon = getClassIcon(character.class);
+                        return <Icon className="h-64 w-64 text-primary" />;
+                    })()}
                 </div>
 
                 {/* 3-Column Header Info */}

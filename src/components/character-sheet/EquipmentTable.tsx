@@ -44,7 +44,7 @@ const EquipmentTable = ({ weapons, equipment }: EquipmentTableProps) => {
                         <tr>
                             <th className="p-2 border-b border-r border-slate-700 w-[30%]">Equipment</th>
                             <th className="p-2 border-b border-r border-slate-700 w-[15%] text-center">Armor</th>
-                            <th className="p-2 border-b border-r border-slate-700 w-[15%] text-center">Size</th>
+                            <th className="p-2 border-b border-r border-slate-700 w-[15%] text-center">Structure</th>
                             <th className="p-2 border-b border-r border-slate-700 w-[15%] text-center">Defense</th>
                             <th className="p-2 border-b border-slate-700 w-[25%]">Special</th>
                         </tr>
@@ -54,7 +54,7 @@ const EquipmentTable = ({ weapons, equipment }: EquipmentTableProps) => {
                             <tr key={i} className="border-b border-slate-700 hover:bg-slate-900/50">
                                 <td className="p-2 border-r border-slate-700 font-medium truncate" title={e.name}>{e.name}</td>
                                 <td className="p-2 border-r border-slate-700 text-center">{e.armor}</td>
-                                <td className="p-2 border-r border-slate-700 text-center">{e.size}</td>
+                                <td className="p-2 border-r border-slate-700 text-center">{e.structure}</td>
                                 <td className="p-2 border-r border-slate-700 text-center">{e.defense}</td>
                                 <td className="p-2 font-mono text-xs text-slate-400 truncate" title={e.special}>{e.special}</td>
                             </tr>
