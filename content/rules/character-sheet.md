@@ -63,7 +63,7 @@ Specialties: Biology, Chemistry, Geology, Metallurgy, Physics…
 Specialties: Climbing, Long-Distance Running, Sprinting, Swimming, Throwing
 - **Brawl**: Unarmed combat, know how to hit an opponent and how to defend themselves from attack. Using fists, elbows, knees, shoulders…
 Specialties: Blocking, Boxing, Grappling, Kung Fu, Throws…
-- **Drive**: Operate a transportation means (horse, coach, boat…) under difficult or dangerous conditions. Skill is not needed in normal conditions.
+- **Drive**: Operate transportation means (horse, coach, boat…) under difficult or dangerous conditions. Skill is not needed in normal conditions.
 Specialties: Horse, Boar, Coach, Pursuit…
 - **Larceny**: Larceny is a broad Skill that covers everything from picking locks to concealing stolen goods and everything in between.
 Specialties: Lock picking, Pickpocketing, Security Systems, Safecracking
@@ -119,7 +119,8 @@ Points are spent representing the character putting all into one action and tryi
 - **Initiative**: Scores that determine the order in which characters act in a turn.
 
 ### Paths
-The Magic is divided in 7 Paths that work in tandem, Air is opposed to Earth, Fire is opposed to Water, Evil is opposed to Holy and Mind is alone.
+
+Magic is divided in 7 Paths that work in tandem, Air is opposed to Earth, Fire is opposed to Water, Evil is opposed to Holy and Mind is alone.
 
 - **Air**: Control the air. 1 dot: Control the blow, 2 dots: Lift a cup, 3 dots: Lift a chair, 4 dots: Lift a table, 5 dots Fly
 - **Earth**: Control ground. 1 dot: Control dust, 2 dots: Move a stone, 3 dots: Move a rock, 4 dots: Stone wall, 5 dots: Earth quake

@@ -17,18 +17,18 @@ Prior to a combat, each character who is not surprised, rolls a dice and adds hi
 
 ## Close Combat, Range Combat
 
-- **Unarmed close combat**: Strength + Brawl – Defense – Armor
-- **Armed close combat**: Strength + Weaponry – Defense – Armor
-- **Range weapon combat**: Dexterity + Shoot – Armor
-- **Thrown weapon**: Dexterity + Athletics – Defense – Armor
+- **Unarmed close combat**: Strength + Brawl - Defense - Armor
+- **Armed close combat**: Strength + Weaponry - Defense - Armor
+- **Range weapon combat**: Dexterity + Shoot - Armor
+- **Thrown weapon**: Dexterity + Athletics - Defense - Armor
 
 ## Additional actions in combat
 
 - **Aiming**: +1 per turn
 - **Armor Piercing x**: ignore x point of target armor
 - **Charge**: +2, no Defense
-- **Cover**: barely -1 / partially -2 / substantially -3 / fully Damage – Durability
-- **Distance of throw**: Strength + Dexterity + Athletics – object Size = Short range
+- **Cover**: barely -1 / partially -2 / substantially -3 / fully Damage - Durability
+- **Distance of throw**: Strength + Dexterity + Athletics - object Size = Short range
 - **Dodge**: Defense x 2
 - **Drawing a weapon**: instant action
 - **Fire under cover**: barely 0 / partially -1 / substantially -2 / fully no attack
