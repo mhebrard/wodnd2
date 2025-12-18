@@ -1,6 +1,6 @@
 ---
 title: "Seoul-Pop-Palooza"
-date: "2025-12-05"
+date: "2025-12-19"
 order: 1
 description: "It is loud, it is colorful, and it is absolutely magical. The ultimate celebration of music that she, a Hunter-Idol, is sworn to protect!"
 campaign: "demon-hunter"
@@ -18,13 +18,13 @@ The crowd is a sea of excitement, packed shoulder-to-shoulder but moving in perf
 
 ## The Backstage Gate
 
-Talin, her manager, hurried over to the gelato stall where Bubblegum stood. He adjusted his headset then frantically tapped his clipboard. Even in his panic, Talin looked sharp, wearing a fitted blazer over a bright graphic tee, but the usual confident smile was gone from his face. His expression was deadly serious.
+Talin, her manager, hurried over to the gelato stall where Bubblegum stood. He adjusted his headset then frantically tapped on his tablet. Even in his panic, Talin looked sharp, wearing a fitted blazer over a bright graphic tee, but the usual confident smile was gone from his face. His expression was deadly serious.
 
 "Bubblegum!" Talin gasped. "I’ve got a bad feeling. The spiritual sensors on my tablet are going haywire!"
 
-He glanced around nervously, lowering his voice so the stage crew wouldn't hear. "The energy backstage feels... off. It’s clashing, like a song played in the wrong key."
+He glanced around nervously, lowering his voice so the crowd wouldn't hear. "The energy backstage feels... off. It’s clashing, like a song played in the wrong key."
 
-He looked Bubblegum right in the eyes. "I need you to sneak back there and find out what’s causing the dissonance before the big finale. Don't worry about the stage crew; I'll handle the fans out front!"
+He looked Bubblegum right in the eyes. "I need you to sneak back there and find out what’s causing the dissonance. Don't worry about the stage crew; I'll handle the fans out front!"
 
 Talin gave her a firm nod. "Go save the show!"
 
@@ -32,7 +32,7 @@ Talin gave her a firm nod. "Go save the show!"
 
 ## The Grumpy Guardian
 
-Bubblegum dashed toward the backstage gate marked with a flashing "ARTISTS ONLY" sign, her shiney boots squeaking on the pavement. But before she could slip through, she skidded to a halt.
+Bubblegum dashed toward the backstage gate marked with a flashing "ARTISTS ONLY" sign, her shiney boots squeaking on the pavement. But before she could slip through, she froze.
 
 A mountain of a man was blocking her path. He sat in a small shaking stool planted directly in front of the door, his broad shoulders practically taking up the whole gate. He looked very grumpy, scowling as if he had just bitten into a sour lemon.
 
@@ -81,14 +81,99 @@ It looked like a ball of living TV static with mean, glowing little eyes. It was
 
 :::rolls
 
-- Can you FIND the demon? You can look around the messy room, ignoring the shouting, to try and spot the actual source of the bad vibes hidden somewhere. 
-(Rule Idea: Roll Wits + Investigation. Need 2 Success)
-- Can you CALM everyone down? You can try to stop the fighting by using your star power to perform a kind speech or a beautiful song. This will break the tension and make the demon weaker! 
+- Can you TRAP the demon? You can take adventage of the chaos to sneak out behind the box and snap the cover on trapping the demon inside. 
+(Rule Idea: Roll Dexterity + Stealth. Need 2 Success)
+- Can you CALM everyone down? You can try to stop the fighting by using your idol power to perform a beautiful song. This will break the tension and make the demon weaker! 
 (Rule Idea: Roll Presence + Expression. Need 2 Success)
 - Can you STOP the idols from hurting each other? You can use your dance training to dash between the arguing Vanta-Black members and catch the broken hair dryer before Shadow hits his bandmate with it! 
 (Rule Idea: Roll Dexterity + Athletics. Need 2 Success)
 
-> Bubblegum try to CALM everyone down with a song to break the tension and make the demon weaker. Roll Presence: 4 + Expression: 5 + Speciality Singing: 1 -> 10d10 -> ? success
+> Bubblegum try to CALM everyone down with a song to break the tension and make the demon weaker. Roll Presence: 4 + Expression: 5 + Speciality Singing: 1 -> 10d10 -> 3 success
+:::
+
+Bubblegum knew she couldn't fight this with fists. She needed to fight it with a feeling.
+
+She planted her feet firmly on the plastic flooring, took a deep breath, and let her melody loose. She didn't shout, she didn't need to, she simply began to sing. As her voice, sweet and clear as a bell, washed over the backstage area, the chaotic energy simply evaporated. The members of Vanta-Black froze, their shouting dying in their throats mid-syllable. The leader of the band lowered the broken hair dryer, looking down at it with sudden confusion. The other dancers stopped their bickering, their hands halted in mid-gesture. Even the spilled glitter seemed to sparkle with a little less aggression.
+
+The silence that followed wasn't empty; it was peaceful. The idols looked around, cheeks flushing pink as they realized how loudly they had been screaming over nothing.
+
+But for one creature, the song was agony. The beautiful harmony didn't just calm the idols; it acted like a spotlight, burning away the shadowy cover the demon had been using. As the ambient dissonance quieted, the Static-ling was left exposed. Inside the box of glow sticks, the ball of dark static twisted violently. It let out a high-pitched squeak, like a radio being tuned rapidly past a dead channel. It couldn't stand the purity of the sound.
+
+Before Bubblegum could move to capture it, the Static-ling panicked. It rocketed out of the box, sending a spray of neon glow sticks clattering across the floor. It zipped past Bubblegum’s legs with startling speed, a blur of fuzzy grey darkness.
+
+"Hey!" Bubblegum shouted, breaking her song.
+
+But the creature was already moving. It streaked across the floorboards, chattering angrily, and darted toward the exit of the tent village. Bubblegum gasped as she realized its trajectory. It wasn't retreating into the dark; it was heading for the loudest, most chaotic place it could find. It was heading straight for the main stage.
+
+## The Big Stage Setback
+
+Bubblegum didn't hesitate. The split second the fuzzy ball of static zipped past her boots, she spun on her heel and sprinted after it.
+
+She burst from the relative quiet of the tent village directly into the sonic wall of the Side Stage. The noise was absolute, a physical force that thrummed against her ribs. The popular girl group "Twinkle Stars" was mid-chorus of their biggest hit, the music booming out over a screaming sea of thousands. Dazzling stage lights swept across the wings, the sudden flash blinding Bubblegum for a heartbeat.
+
+The wings were a treacherous obstacle course. Roadies clad in black t-shirts shoved heavy flight cases through narrow gaps, while thick black power cables snaked across the floor like synthetic vines, waiting to trip the unwary. Crew members shouted frantically into headsets, their voices lost in the roar of the performance.
+
+Bubblegum spotted her target. The little grey Static-ling was moving impossibly fast, a nasty blur of negative energy weaving between the legs of a startled cameraman. It was aiming for the towering speaker stack beside the main screen.
+
+Bubblegum knew exactly what was about to happen. If that creature made contact with the sound system, the beautiful music would be shredded by painful feedback and electronic screeching. The crowd would boo, the idols would be heartbroken, and the demon would gorge itself on the sudden banquet of misery. She had to stop it.
+
+![The Big Stage Setback](/images/demon-hunter/01_05_The_Big_Stage_Setback.png)
+
+:::rolls
+
+- Can you INTERCEPT it ? You can use your dancer training to sprint through the tangle of cables and the busy roadies, and stop the demon before he reaches the speaker.
+(Rule Idea: Roll Dexterity + Athletics. Need 2 Success)
+- Can you CANCEL it ? You remember its high-pitched squeak and can sing the exact musical opposite, a "white noise harmony." That should vaporize its bad vibes before it reaches the speaker.
+(Rule Idea: Roll Wits + Performance. Need 2 Success)
+- Can you STUN it ? You notice a heavy stage spotlight sitting on a rolling stand nearby. You know Dissonance Demons hate bright, pure light. You can grab the stand and swing the heavy spotlight aiming the demon to stun it.
+(Rule Idea: Roll Wits + Athletics. Need 2 Success)
+
+> Bubblegum try to INTERCEPT the demon. In this dare situation, she focus her idol energy into her boots to gain speed and agility. 
+Roll Dexterity: 4 + Athletics: 3 + Speciality Acrobatics: 1 + Air Magic 1 -> 9d10 -> 3 success
+
+:::
+
+Bubblegum’s boots ignited with swirling white magic, and she zoomed forward like a rocket. She was moving faster than she ever had in her life, a blur of motion cutting through the backstage clutter. Roadies gasped and dropped their cables as a streak of blue, purple, and white light whipped past them. The little grey Static-ling was fast, but Bubblegum was faster.
+
+Just as the demon leaped through the air, aiming its fuzzy body directly at the giant speaker tower, Bubblegum made her move. She dropped into a perfect power-slide, the magic in her boots acting like a cushion of compressed air. She slid right in front of the tower, blocking the path at the last possible second.
+
+THWACK!
+
+The Static-ling slammed squarely into the side of her magical boot instead of the speaker. It let out a surprised squeak and ricocheted backward, tumbling across the stage floor like a discarded lint ball.
+
+Above them, the music of Twinkle Stars continued without a hitch. The crowd roared their approval, completely oblivious to the fact that Bubblegum had just saved the entire concert from sonic disaster.
+
+But the demon wasn't finished yet. It rolled to a stop in the center of the wings, hemmed in by heavy equipment cases. It shook itself off, its little red eyes glowing with furious, bright intensity. It knew it couldn't hide anymore. It was trapped, angry, and hungry for a fight.
+
+Suddenly, the little fuzzball began to twitch and expand. It pulled the front speakers nearby and loose wires toward itself, absorbing them into its mass, growing bigger, darker, and uglier by the second.
+
+## The Feedback Fiend!
+
+The Static-ling grows bigger and bigger. It merges with the equipment and speakers, forming a giant monster made of tangled wires, static, and shadows. The "Feedback Fiend" roars, and it's a sound like a microphone screeching!
+
+![The Feedback Fiend](/images/demon-hunter/01_06_The_Feedback_Fiend.png)
+
+:::rolls
+
+This is a "social combat." We'll take turns.
+
+Instead of "Health," the Demon has "Vibe Points." This is a measure of its shield of nasty static energy. Demon's Vibe Points: 5. Demon’s Dissonance Armor: 2
+
+The battle happens in rounds. In each round, Bubblegum gets to act, and then the Demon gets to act.
+
+- Turn 1: Bubblegum's Attack (The Melody)
+  Bubblegum sings her heart out and dances up a storm to damage the demon's negative energy field.
+(Rule Idea: Roll Presence + Expression - Dissonance. Success 7+)
+
+- Turn 2: The Demon's Counter-Attack (The Feedback)
+  Now the Demon tries to stop her. It doesn't punch her; it attacks her confidence. It unleaches a horrible screeching noise and waves of paralyzing doubt and fear.
+(Rule Idea: Roll 5 Dice - Composure. Success 7+)
+
+Each success of the Demon attack reduces the player’s Presence for the next turn
+
+- Bubblegum Attack: Presence 4 + Expression 5 + specialty Singing 1 - Dissonance 2. Success 7+ -> 8d10
+- Demon Attack: 5 - Composure 2 -> 3d10
+
 :::
 
 [...TBC...]
