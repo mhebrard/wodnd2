@@ -104,7 +104,7 @@ other_traits:
     max: 10
   xp:
     spent: 0
-    earned: 0
+    earned: 4
   advantages:
     size: 6
     speed: 13
@@ -146,7 +146,7 @@ equipment:
 
 ## Story
 
-- Bubblegum first mission as a Hunter Idol was to protect the Seoul Pop Palooza festival.
+- Bubblegum first mission as a Hunter Idol was to protect the Seoul Pop Palooza festival. (+4 XP)
 
 ## Creation
 
@@ -203,3 +203,34 @@ equipment:
 ### Class Equivalent
 
 In term of class, Bubblegum is equivalent to a Bard from the College of Swords.
+
+## Experience
+
+> Experience cost:
+> - Attribute: New dots x 5
+> - Skill: New dots x 3
+> - Specialty: 3
+> - Merit: New dots x 2
+> - Mastery: New dots x 7
+> - Major Path: New dots x 5
+> - Minor Path: New dots x 6
+
+### Attributes (new dots x 5)
+
+- Wits: 1 / 20
+- Dexterity: 1 / 25
+- Presence: 2 / 25
+
+### Skills (new dots x 3)
+
+- Athletics: 1 / 12
+- Empathy: 1 / 9
+- Expression: 2 / 0
+
+### Mastery (new dots x 7)
+
+- Mastery: 1 / 14
+
+### Major Path (new dots x 5)
+
+- Air: 1 / 10  
