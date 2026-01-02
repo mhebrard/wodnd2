@@ -171,9 +171,40 @@ The battle happens in rounds. In each round, Bubblegum gets to act, and then the
 
 Each success of the Demon attack reduces the player’s Presence for the next turn
 
-- Bubblegum Attack: Presence 4 + Expression 5 + specialty Singing 1 - Dissonance 2. Success 7+ -> 8d10
-- Demon Attack: 5 - Composure 2 -> 3d10
+> Bubblegum Attack. Roll Presence 4 + Expression 5 + specialty Singing 1 - Dissonance 2. Success 7+ -> 8d10 -> 4 success
+
+> Demon Attack. Roll 5 - Composure 2 -> 3d10 -> 3 success
+
+> Bubblegum Attack. Roll Presence 4 - Doubt 3 + Expression 5 + specialty Singing 1 - Dissonance 2. Success 7+ -> 5d10 -> 3 success
 
 :::
 
-[...TBC...]
+The Twinkle Stars stopped singing abruptly mid-verse. They quickly dropped their microphones and hurried off the main stage toward safety. This was Bubblegum’s moment, the real fight was about to begin.
+
+Bubblegum seized the rhythm still thumping through the giant speakers. Spinning on her heel to face the towering beast, she raised her microphone and hijacked the Twinkle Stars' instrumental track. She belted out new lyrics over their beat, transforming the pop hit into her own personal power anthem. Her voice was perfection. The music became waves of pure, sparkling, pink energy that shaved the demon's static armor, turning it into harmless, glittering confetti.
+
+The monster shrieked in fury at being damaged by the melody. It retaliated, not with claws, but with noise. It screammed an horrible "Stage Fright" back to Bubblegum. The dazzling backstage lights seemed to dim, casting long, scary shadows across the floor. A crushing weight settled on Bubblegum’s chest, choking her next breath. Her confident smile faltered. The doubt whispered loudly in her ear: You're going to mess up. Everyone else ran away. You aren't good enough to stop this alone. Her knees shook, and her sparkling presence dimmed significantly as the negativity seeped into her.
+
+But a true Hunter-Idol never stops the show! Even with her confidence shaken and her throat feeling tight with fear, Bubblegum pushed through. She relied on her endless hours of rigorous training. She forced her body to keep dancing to the beat, letting muscle memory take over where her courage flagged. She sang the bridge of the song, her voice wavering slightly but hitting every note with determined accuracy. The melody, though quieter now and less flashy, still held true power. It struck the Feedback Fiend again, the giant monster was looking weak, its dissonamce aura vanished. It was time to finish it.
+
+## Encore!
+
+Bubblegum hit the final, amazing high note of her performance. A palpable wave of pure-hearted energy erupted from her microphone, slamming squarely into the Feedback Fiend. It explodes into a cloud of harmless, sparkling confetti. The crowd, thinking it was all an incredible special effect, goes absolutely WILD. They are chanting her name over and over "BUB-BLE-GUM! BUB-BLE-GUM!"
+
+She stood center stage, catching her breath, bathed in the bright lights and surrounded by swirling glitter dust. A massive surge of pride swelled within her chest. She had actually done it; her first mission was a complete success. With a beaming, triumphant smile, she bent deep in a theatrical bow to her adoring new fans.
+
+As she straightened up, she glanced toward the backstage wing of the stage. The rival idol group, Vanta-Black, stood there, staring open-mouthed at the spectacle she had created. Their stern leader caught Bubblegum's eye and offered a respectful nod. It was clear they wouldn't be messing with her again.
+
+As the glitter settles on the stage floor, something catches Bubblegum's attention. It is the only thing on the floor that isn't glittering.
+
+Lying right where the creature of gloom had burst apart was a small rectangular object. Bending down, the hero picked it up. It felt strangely heavy and icy cold against their skin, more like a slab of carved obsidian stone than simple paper. It was slick to the touch and looked very expensive. There was no name, no phone number, and no email address. In the center, embossed in shining, chilly silver, was just one symbol:
+
+Ω
+
+Below the Omega symbol, in very fine silver letters, it read: APEX MANAGEMENT GROUP – Talent Acquisition & Obfuscation Division.
+
+A sudden shiver ran through Bubblegum just holding it, even under the heat of the stage spotlights. The card felt hollow. It felt like the exact opposite of music. Bubblegum tucked the strange black card into a pocket before the stage managers came out. Whatever just attacked the concert, it wasn't working alone. It has a manager.
+
+![The Clue](/images/demon-hunter/01_07_The_Clue.png)
+
+## THE END ##
