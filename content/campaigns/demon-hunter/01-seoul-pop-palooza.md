@@ -207,4 +207,15 @@ A sudden shiver ran through Bubblegum just holding it, even under the heat of th
 
 ![The Clue](/images/demon-hunter/01_07_The_Clue.png)
 
+:::rolls
+
+Bubblegum Experience:
+
+- Mission Complete: +1 XP
+- Flawless Execution: +1 XP
+- Excellent Roleplay: +1 XP
+- Creative Ingenuity: +1 XP
+
+:::
+
 ## THE END ##
