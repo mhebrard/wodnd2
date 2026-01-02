@@ -32,7 +32,7 @@ Talin gave her a firm nod. "Go save the show!"
 
 ## The Grumpy Guardian
 
-Bubblegum dashed toward the backstage gate marked with a flashing "ARTISTS ONLY" sign, her shiney boots squeaking on the pavement. But before she could slip through, she froze.
+Bubblegum dashed toward the backstage gate marked with a flashing "ARTISTS ONLY" sign, her shiny boots squeaking on the pavement. But before she could slip through, she froze.
 
 A mountain of a man was blocking her path. He sat in a small shaking stool planted directly in front of the door, his broad shoulders practically taking up the whole gate. He looked very grumpy, scowling as if he had just bitten into a sour lemon.
 
@@ -50,7 +50,7 @@ The guard looked up and crossed his massive arms. "Hold it," he grumbled, his vo
 - Do you try to be SNEAKY? Maybe you see the white tents and stack of equipment boxes laying all around, you can slip in behind them?
 (Rule Idea: roll Dexterity + Stealth. Need 1 Success)
 
-> Bubblegum try to be CLEVER and makes friend with the guard by complimenting his favorite group the Vanta-Black. Roll Wits: 3 + Empathy: 2 -> 5d10 -> 3 success
+> Bubblegum tries to be CLEVER and makes friends with the guard by complimenting his favorite group the Vanta-Black. Roll Wits: 3 + Empathy: 2 -> 5d10 -> 3 success
 :::
 
 Bubblegum didn't back down. She stepped right up to the huge security guard. He tightened his crossed arms, looking ready to growl at her to go away. But Bubblegum was clever! She had spotted the lanyard around his neck, and she knew exactly what to do.
@@ -80,8 +80,7 @@ It looked like a ball of living TV static with mean, glowing little eyes. It was
 ![The Dressing Room Disaster](/images/demon-hunter/01_04_The_Dressing_Room_Disaster.png)
 
 :::rolls
-
-- Can you TRAP the demon? You can take adventage of the chaos to sneak out behind the box and snap the cover on trapping the demon inside. 
+- Can you TRAP the demon? You can take advantage of the chaos to sneak out behind the box and snap the cover on trapping the demon inside. 
 (Rule Idea: Roll Dexterity + Stealth. Need 2 Success)
 - Can you CALM everyone down? You can try to stop the fighting by using your idol power to perform a beautiful song. This will break the tension and make the demon weaker! 
 (Rule Idea: Roll Presence + Expression. Need 2 Success)
@@ -120,7 +119,6 @@ Bubblegum knew exactly what was about to happen. If that creature made contact w
 ![The Big Stage Setback](/images/demon-hunter/01_05_The_Big_Stage_Setback.png)
 
 :::rolls
-
 - Can you INTERCEPT it ? You can use your dancer training to sprint through the tangle of cables and the busy roadies, and stop the demon before he reaches the speaker.
 (Rule Idea: Roll Dexterity + Athletics. Need 2 Success)
 - Can you CANCEL it ? You remember its high-pitched squeak and can sing the exact musical opposite, a "white noise harmony." That should vaporize its bad vibes before it reaches the speaker.
@@ -128,9 +126,8 @@ Bubblegum knew exactly what was about to happen. If that creature made contact w
 - Can you STUN it ? You notice a heavy stage spotlight sitting on a rolling stand nearby. You know Dissonance Demons hate bright, pure light. You can grab the stand and swing the heavy spotlight aiming the demon to stun it.
 (Rule Idea: Roll Wits + Athletics. Need 2 Success)
 
-> Bubblegum try to INTERCEPT the demon. In this dare situation, she focus her idol energy into her boots to gain speed and agility. 
+> Bubblegum tries to INTERCEPT the demon. In this dare situation, she focuses her idol energy into her boots to gain speed and agility. 
 Roll Dexterity: 4 + Athletics: 3 + Speciality Acrobatics: 1 + Air Magic 1 -> 9d10 -> 3 success
-
 :::
 
 Bubblegum’s boots ignited with swirling white magic, and she zoomed forward like a rocket. She was moving faster than she ever had in her life, a blur of motion cutting through the backstage clutter. Roadies gasped and dropped their cables as a streak of blue, purple, and white light whipped past them. The little grey Static-ling was fast, but Bubblegum was faster.
@@ -154,7 +151,6 @@ The Static-ling grows bigger and bigger. It merges with the equipment and speake
 ![The Feedback Fiend](/images/demon-hunter/01_06_The_Feedback_Fiend.png)
 
 :::rolls
-
 This is a "social combat." We'll take turns.
 
 Instead of "Health," the Demon has "Vibe Points." This is a measure of its shield of nasty static energy. Demon's Vibe Points: 5. Demon’s Dissonance Armor: 2
@@ -176,16 +172,15 @@ Each success of the Demon attack reduces the player’s Presence for the next tu
 > Demon Attack. Roll 5 - Composure 2 -> 3d10 -> 3 success
 
 > Bubblegum Attack. Roll Presence 4 - Doubt 3 + Expression 5 + specialty Singing 1 - Dissonance 2. Success 7+ -> 5d10 -> 3 success
-
 :::
 
 The Twinkle Stars stopped singing abruptly mid-verse. They quickly dropped their microphones and hurried off the main stage toward safety. This was Bubblegum’s moment, the real fight was about to begin.
 
 Bubblegum seized the rhythm still thumping through the giant speakers. Spinning on her heel to face the towering beast, she raised her microphone and hijacked the Twinkle Stars' instrumental track. She belted out new lyrics over their beat, transforming the pop hit into her own personal power anthem. Her voice was perfection. The music became waves of pure, sparkling, pink energy that shaved the demon's static armor, turning it into harmless, glittering confetti.
 
-The monster shrieked in fury at being damaged by the melody. It retaliated, not with claws, but with noise. It screammed an horrible "Stage Fright" back to Bubblegum. The dazzling backstage lights seemed to dim, casting long, scary shadows across the floor. A crushing weight settled on Bubblegum’s chest, choking her next breath. Her confident smile faltered. The doubt whispered loudly in her ear: You're going to mess up. Everyone else ran away. You aren't good enough to stop this alone. Her knees shook, and her sparkling presence dimmed significantly as the negativity seeped into her.
+The monster shrieked in fury at being damaged by the melody. It retaliated, not with claws, but with noise. It screamed a horrible "Stage Fright" back to Bubblegum. The dazzling backstage lights seemed to dim, casting long, scary shadows across the floor. A crushing weight settled on Bubblegum’s chest, choking her next breath. Her confident smile faltered. The doubt whispered loudly in her ear: You're going to mess up. Everyone else ran away. You aren't good enough to stop this alone. Her knees shook, and her sparkling presence dimmed significantly as the negativity seeped into her.
 
-But a true Hunter-Idol never stops the show! Even with her confidence shaken and her throat feeling tight with fear, Bubblegum pushed through. She relied on her endless hours of rigorous training. She forced her body to keep dancing to the beat, letting muscle memory take over where her courage flagged. She sang the bridge of the song, her voice wavering slightly but hitting every note with determined accuracy. The melody, though quieter now and less flashy, still held true power. It struck the Feedback Fiend again, the giant monster was looking weak, its dissonamce aura vanished. It was time to finish it.
+But a true Hunter-Idol never stops the show! Even with her confidence shaken and her throat feeling tight with fear, Bubblegum pushed through. She relied on her endless hours of rigorous training. She forced her body to keep dancing to the beat, letting muscle memory take over where her courage flagged. She sang the bridge of the song, her voice wavering slightly but hitting every note with determined accuracy. The melody, though quieter now and less flashy, still held true power. It struck the Feedback Fiend again, the giant monster was looking weak, its dissonance aura vanished. It was time to finish it.
 
 ## Encore!
 
@@ -208,14 +203,12 @@ A sudden shiver ran through Bubblegum just holding it, even under the heat of th
 ![The Clue](/images/demon-hunter/01_07_The_Clue.png)
 
 :::rolls
-
 Bubblegum Experience:
 
 - Mission Complete: +1 XP
 - Flawless Execution: +1 XP
 - Excellent Roleplay: +1 XP
 - Creative Ingenuity: +1 XP
-
 :::
 
 ## THE END ##
