@@ -1,6 +1,6 @@
 ---
 title: "Seoul-Pop-Palooza"
-date: "2025-12-19"
+date: "2026-01-02"
 order: 1
 description: "It is loud, it is colorful, and it is absolutely magical. The ultimate celebration of music that she, a Hunter-Idol, is sworn to protect!"
 campaign: "demon-hunter"

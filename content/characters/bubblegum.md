@@ -7,7 +7,7 @@ player: "Maelys"
 fellowship: ""
 chronicle: "Demon Hunter"
 campaign: "demon-hunter"
-date: "2023-12-12"
+date: "2026-01-02"
 attributes:
   mental:
     intelligence: 1
@@ -67,7 +67,7 @@ skills:
       value: 5
       specialty: "Singing"
     - name: "Intimidation"
-      value: 2
+      value: 0
     - name: "Persuasion"
       value: 0
     - name: "Socialize"
@@ -175,7 +175,7 @@ equipment:
 - Secondary: Physical (7 dots)
   - Athletics: 3 - Endurance for concerts and agility for hunting. This supports her "Dodge" and movement speed. *Specialty: Acrobatics* (both stage choreography and dodging demon attacks).
   - Stealth: 1 - She has just enough training to hide from paparazzi or sneak up on a distracted demon, but she isn't a ninja.
-  - Weaponry: 3 - She is professional-level trained with her magical staff. *Specialty: Sword*.
+  - Weaponry: 3 - She is professional-level trained with her magical katana. *Specialty: Sword*.
 - Tertiary: Mental (4 dots)
   - Investigation: 1 - She can spot a clue if it's obvious, but she isn't a detective.
   - Medicine: 1 - Basic first aid. Idol training often includes how to treat minor sprains or exhaustion.
@@ -198,11 +198,11 @@ equipment:
 ### Initial Equipment
 
 - Mic Katana: Her microphone is her Hunter Idol magic focus. When in need to fight demons, she can invoke a katana blade from the tail of the mic.
-- Reinforced Stage Gear: Her agency provide reinforced stage gear (equivalent to leather armor).
+- Reinforced Stage Gear: Her agency provides reinforced stage gear (equivalent to leather armor).
 
 ### Class Equivalent
 
-In term of class, Bubblegum is equivalent to a Bard from the College of Swords.
+In terms of class, Bubblegum is equivalent to a Bard from the College of Swords.
 
 ## Experience
 
