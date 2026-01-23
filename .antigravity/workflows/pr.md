@@ -20,10 +20,11 @@ Retrieve the `git diff` between the **current active branch** and the `main` bra
     - **Fixed**: for any bug fixes.
     - **Security**: in case of vulnerabilities.
 3.  **Filter**: Do NOT include sections that have no relevant changes.
-4.  **File Referencing**: Mention filenames strictly as text wrapped in backticks.
-5.  **Format**: Return the result inside a single Markdown code block so it can be copied.
-6.  **Title Convention**: Use Conventional Commits (e.g., `feat:`, `fix:`) followed by a concise summary.
-7.  **Constraint**: Your response must contain **ONLY** a single code block containing the PR content. Do not add conversational text like "Here is your PR draft."
+4.  **Content Style**: Write a descriptive sentence for each change. Do NOT just list the file path.
+5.  **File Referencing**: Use the file's **basename** (e.g., `utils.py` not `/src/utils.py`) wrapped in backticks within the description.
+6.  **Format**: Return the result inside a single Markdown code block so it can be copied.
+7.  **Title Convention**: Use Conventional Commits (e.g., `feat:`, `fix:`) followed by a concise summary.
+8.  **Constraint**: Your response must contain **ONLY** a single code block containing the PR content. Do not add conversational text like "Here is your PR draft."
 
 # Output Template
 Please fill in the following template inside the code block:

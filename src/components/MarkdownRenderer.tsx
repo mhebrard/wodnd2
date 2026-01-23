@@ -57,6 +57,20 @@ const MarkdownRenderer = ({ content }: MarkdownRendererProps) => {
                             );
                         }
                         return <details className={className} {...props}>{children}</details>;
+                    },
+                    img: (props) => {
+                        let src = props.src as string;
+                        // Prepend base path for absolute paths that don't already have it
+                        if (src && typeof src === 'string' && src.startsWith('/') && !src.startsWith('/wodnd2')) {
+                            src = `/wodnd2${src}`;
+                        }
+                        return (
+                            <img
+                                {...props}
+                                src={src}
+                                className="rounded-lg shadow-lg my-8 w-full object-cover"
+                            />
+                        );
                     }
                 }}
             >
